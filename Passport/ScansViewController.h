@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  ScansViewController.h
 //  Passport
 //
 //  Created by Максим Добряков on 6/11/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface ScansViewController : UIViewController
 
 @end

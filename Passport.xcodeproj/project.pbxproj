@@ -7,41 +7,127 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0927E2BD1587AB3300B3EA3B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0927E2BC1587AB3300B3EA3B /* MessageUI.framework */; };
+		0927E2C01587B0BE00B3EA3B /* GenderFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0927E2BF1587B0BE00B3EA3B /* GenderFormatter.m */; };
+		098CEB56158720A10047294E /* NSDate+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 098CEB55158720A10047294E /* NSDate+Formatter.m */; };
+		099FB28A15879C04009D4A05 /* e-mail.template in Resources */ = {isa = PBXBuildFile; fileRef = 099FB28915879C03009D4A05 /* e-mail.template */; };
+		099FB28D1587A09C009D4A05 /* MailComposer.m in Sources */ = {isa = PBXBuildFile; fileRef = 099FB28C1587A09C009D4A05 /* MailComposer.m */; };
 		09BEADEB158618D900144302 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BEADEA158618D900144302 /* UIKit.framework */; };
 		09BEADED158618D900144302 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BEADEC158618D900144302 /* Foundation.framework */; };
 		09BEADEF158618D900144302 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BEADEE158618D900144302 /* CoreGraphics.framework */; };
-		09BEADF5158618D900144302 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09BEADF3158618D900144302 /* InfoPlist.strings */; };
 		09BEADF7158618D900144302 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BEADF6158618D900144302 /* main.m */; };
 		09BEADFB158618D900144302 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BEADFA158618D900144302 /* AppDelegate.m */; };
-		09BEADFE158618D900144302 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09BEADFC158618D900144302 /* MainStoryboard.storyboard */; };
-		09BEAE01158618D900144302 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BEAE00158618D900144302 /* FirstViewController.m */; };
-		09BEAE03158618D900144302 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BEAE02158618D900144302 /* first.png */; };
-		09BEAE05158618D900144302 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BEAE04158618D900144302 /* first@2x.png */; };
-		09BEAE08158618D900144302 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BEAE07158618D900144302 /* SecondViewController.m */; };
-		09BEAE0A158618D900144302 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BEAE09158618D900144302 /* second.png */; };
-		09BEAE0C158618D900144302 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BEAE0B158618D900144302 /* second@2x.png */; };
+		09BEAE01158618D900144302 /* PassportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BEAE00158618D900144302 /* PassportViewController.m */; };
+		09BEAE08158618D900144302 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BEAE07158618D900144302 /* SettingsViewController.m */; };
+		09BEAE13158619DD00144302 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09BEAE14158619DD00144302 /* MainStoryboard.storyboard */; };
+		09BEAE1F15861BE100144302 /* ScansViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BEAE1E15861BE100144302 /* ScansViewController.m */; };
+		09BEAE2315861E9C00144302 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BEAE2215861E9C00144302 /* LoginViewController.m */; };
+		09BEAE2A15861F4600144302 /* PasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BEAE2915861F4600144302 /* PasswordViewController.m */; };
+		09BEAE3915864DAD00144302 /* passport.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BEAE3715864DAD00144302 /* passport.png */; };
+		09BEAE3A15864DAD00144302 /* passport@2.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BEAE3815864DAD00144302 /* passport@2.png */; };
+		09BEAE3D15864E5C00144302 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BEAE3B15864E5C00144302 /* settings.png */; };
+		09BEAE3E15864E5C00144302 /* settings@2.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BEAE3C15864E5C00144302 /* settings@2.png */; };
+		09BEAE4115864E9600144302 /* scanner.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BEAE3F15864E9600144302 /* scanner.png */; };
+		09BEAE4215864E9600144302 /* scanner@2.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BEAE4015864E9600144302 /* scanner@2.png */; };
+		09BEAE46158656DF00144302 /* Passport.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BEAE45158656DF00144302 /* Passport.m */; };
+		09BEAE87158676F600144302 /* AbstractActionSheetPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BEAE63158676F600144302 /* AbstractActionSheetPicker.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		09BEAE88158676F600144302 /* ActionSheetDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BEAE65158676F600144302 /* ActionSheetDatePicker.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		09BEAE89158676F600144302 /* ActionSheetDistancePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BEAE67158676F600144302 /* ActionSheetDistancePicker.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		09BEAE8A158676F600144302 /* ActionSheetStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BEAE69158676F600144302 /* ActionSheetStringPicker.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		09BEAE8B158676F600144302 /* DistancePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BEAE6B158676F600144302 /* DistancePickerView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		09BEAEA015868CBD00144302 /* PassportRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BEAE9F15868CBD00144302 /* PassportRepository.m */; };
+		09BEAEAC1586905F00144302 /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BEAEA71586905F00144302 /* UICKeyChainStore.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		09BEAEAE158690B300144302 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BEAEAD158690B300144302 /* Security.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		09BEAE97158676F600144302 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09BEAE6F158676F600144302 /* ActionSheetPicker.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = ActionSheetPicker;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0927E2BC1587AB3300B3EA3B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		0927E2BE1587B0BE00B3EA3B /* GenderFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenderFormatter.h; sourceTree = "<group>"; };
+		0927E2BF1587B0BE00B3EA3B /* GenderFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenderFormatter.m; sourceTree = "<group>"; };
+		098CEB54158720A10047294E /* NSDate+Formatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Formatter.h"; sourceTree = "<group>"; };
+		098CEB55158720A10047294E /* NSDate+Formatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Formatter.m"; sourceTree = "<group>"; };
+		099FB28915879C03009D4A05 /* e-mail.template */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; path = "e-mail.template"; sourceTree = "<group>"; };
+		099FB28B1587A09B009D4A05 /* MailComposer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailComposer.h; sourceTree = "<group>"; };
+		099FB28C1587A09C009D4A05 /* MailComposer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailComposer.m; sourceTree = "<group>"; };
 		09BEADE6158618D900144302 /* Passport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Passport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09BEADEA158618D900144302 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		09BEADEC158618D900144302 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		09BEADEE158618D900144302 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		09BEADF2158618D900144302 /* Passport-Info.plist */ = {isa = PBXFileReference; path = "Passport-Info.plist"; sourceTree = "<group>"; };
-		09BEADF4158618D900144302 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		09BEADF2158618D900144302 /* Passport-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Passport-Info.plist"; sourceTree = "<group>"; };
 		09BEADF6158618D900144302 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		09BEADF8158618D900144302 /* Passport-Prefix.pch */ = {isa = PBXFileReference; path = "Passport-Prefix.pch"; sourceTree = "<group>"; };
-		09BEADF9158618D900144302 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		09BEADF8158618D900144302 /* Passport-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Passport-Prefix.pch"; sourceTree = "<group>"; };
+		09BEADF9158618D900144302 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		09BEADFA158618D900144302 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		09BEADFD158618D900144302 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		09BEADFF158618D900144302 /* FirstViewController.h */ = {isa = PBXFileReference; path = FirstViewController.h; sourceTree = "<group>"; };
-		09BEAE00158618D900144302 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		09BEAE02158618D900144302 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		09BEAE04158618D900144302 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		09BEAE06158618D900144302 /* SecondViewController.h */ = {isa = PBXFileReference; path = SecondViewController.h; sourceTree = "<group>"; };
-		09BEAE07158618D900144302 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		09BEAE09158618D900144302 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		09BEAE0B158618D900144302 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		09BEADFF158618D900144302 /* PassportViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PassportViewController.h; sourceTree = "<group>"; };
+		09BEAE00158618D900144302 /* PassportViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PassportViewController.m; sourceTree = "<group>"; };
+		09BEAE06158618D900144302 /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		09BEAE07158618D900144302 /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		09BEAE14158619DD00144302 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		09BEAE1D15861BE100144302 /* ScansViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScansViewController.h; sourceTree = "<group>"; };
+		09BEAE1E15861BE100144302 /* ScansViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScansViewController.m; sourceTree = "<group>"; };
+		09BEAE2115861E9C00144302 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		09BEAE2215861E9C00144302 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		09BEAE2815861F4600144302 /* PasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordViewController.h; sourceTree = "<group>"; };
+		09BEAE2915861F4600144302 /* PasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordViewController.m; sourceTree = "<group>"; };
+		09BEAE3715864DAD00144302 /* passport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = passport.png; sourceTree = "<group>"; };
+		09BEAE3815864DAD00144302 /* passport@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "passport@2.png"; sourceTree = "<group>"; };
+		09BEAE3B15864E5C00144302 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		09BEAE3C15864E5C00144302 /* settings@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2.png"; sourceTree = "<group>"; };
+		09BEAE3F15864E9600144302 /* scanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scanner.png; sourceTree = "<group>"; };
+		09BEAE4015864E9600144302 /* scanner@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scanner@2.png"; sourceTree = "<group>"; };
+		09BEAE44158656DF00144302 /* Passport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Passport.h; sourceTree = "<group>"; };
+		09BEAE45158656DF00144302 /* Passport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Passport.m; sourceTree = "<group>"; };
+		09BEAE471586575A00144302 /* Gender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gender.h; sourceTree = "<group>"; };
+		09BEAE4915865C0C00144302 /* NSCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCoding.h; sourceTree = "<group>"; };
+		09BEAE5D158676F600144302 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		09BEAE5E158676F600144302 /* ActionSheetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetPicker.h; sourceTree = "<group>"; };
+		09BEAE5F158676F600144302 /* AUTHORS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AUTHORS; sourceTree = "<group>"; };
+		09BEAE60158676F600144302 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		09BEAE62158676F600144302 /* AbstractActionSheetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractActionSheetPicker.h; sourceTree = "<group>"; };
+		09BEAE63158676F600144302 /* AbstractActionSheetPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractActionSheetPicker.m; sourceTree = "<group>"; };
+		09BEAE64158676F600144302 /* ActionSheetDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetDatePicker.h; sourceTree = "<group>"; };
+		09BEAE65158676F600144302 /* ActionSheetDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetDatePicker.m; sourceTree = "<group>"; };
+		09BEAE66158676F600144302 /* ActionSheetDistancePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetDistancePicker.h; sourceTree = "<group>"; };
+		09BEAE67158676F600144302 /* ActionSheetDistancePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetDistancePicker.m; sourceTree = "<group>"; };
+		09BEAE68158676F600144302 /* ActionSheetStringPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetStringPicker.h; sourceTree = "<group>"; };
+		09BEAE69158676F600144302 /* ActionSheetStringPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetStringPicker.m; sourceTree = "<group>"; };
+		09BEAE6A158676F600144302 /* DistancePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistancePickerView.h; sourceTree = "<group>"; };
+		09BEAE6B158676F600144302 /* DistancePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistancePickerView.m; sourceTree = "<group>"; };
+		09BEAE6C158676F600144302 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		09BEAE6E158676F600144302 /* ActionSheetPicker-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ActionSheetPicker-Info.plist"; sourceTree = "<group>"; };
+		09BEAE6F158676F600144302 /* ActionSheetPicker.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = ActionSheetPicker.xcodeproj; sourceTree = "<group>"; };
+		09BEAE72158676F600144302 /* ActionSheetPicker_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetPicker_Prefix.pch; sourceTree = "<group>"; };
+		09BEAE73158676F600144302 /* ActionSheetPickerViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "ActionSheetPickerViewController-iPad.xib"; sourceTree = "<group>"; };
+		09BEAE74158676F600144302 /* ActionSheetPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActionSheetPickerViewController.xib; sourceTree = "<group>"; };
+		09BEAE76158676F600144302 /* ActionSheetPickerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetPickerAppDelegate.h; sourceTree = "<group>"; };
+		09BEAE77158676F600144302 /* ActionSheetPickerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetPickerAppDelegate.m; sourceTree = "<group>"; };
+		09BEAE78158676F600144302 /* ActionSheetPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetPickerViewController.h; sourceTree = "<group>"; };
+		09BEAE79158676F600144302 /* ActionSheetPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetPickerViewController.m; sourceTree = "<group>"; };
+		09BEAE7A158676F600144302 /* NSDate+TCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TCUtils.h"; sourceTree = "<group>"; };
+		09BEAE7B158676F600144302 /* NSDate+TCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TCUtils.m"; sourceTree = "<group>"; };
+		09BEAE7D158676F600144302 /* MainWindow-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		09BEAE7E158676F600144302 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		09BEAE7F158676F600144302 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		09BEAE9E15868CBD00144302 /* PassportRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassportRepository.h; sourceTree = "<group>"; };
+		09BEAE9F15868CBD00144302 /* PassportRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassportRepository.m; sourceTree = "<group>"; };
+		09BEAEA21586905F00144302 /* .gitattributes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		09BEAEA31586905F00144302 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		09BEAEA41586905F00144302 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		09BEAEA51586905F00144302 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		09BEAEA61586905F00144302 /* UICKeyChainStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICKeyChainStore.h; sourceTree = "<group>"; };
+		09BEAEA71586905F00144302 /* UICKeyChainStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICKeyChainStore.m; sourceTree = "<group>"; };
+		09BEAEAD158690B300144302 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		09BEAEAF1586915E00144302 /* Passport.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Passport.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +136,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				09BEADEB158618D900144302 /* UIKit.framework in Frameworks */,
+				0927E2BD1587AB3300B3EA3B /* MessageUI.framework in Frameworks */,
+				09BEAEAE158690B300144302 /* Security.framework in Frameworks */,
 				09BEADED158618D900144302 /* Foundation.framework in Frameworks */,
 				09BEADEF158618D900144302 /* CoreGraphics.framework in Frameworks */,
 			);
@@ -78,6 +166,10 @@
 		09BEADE9158618D900144302 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				09BEAEA11586905F00144302 /* UICKeyChainStore */,
+				09BEAE5C158676F600144302 /* ActionSheetPicker */,
+				0927E2BC1587AB3300B3EA3B /* MessageUI.framework */,
+				09BEAEAD158690B300144302 /* Security.framework */,
 				09BEADEA158618D900144302 /* UIKit.framework */,
 				09BEADEC158618D900144302 /* Foundation.framework */,
 				09BEADEE158618D900144302 /* CoreGraphics.framework */,
@@ -90,16 +182,15 @@
 			children = (
 				09BEADF9158618D900144302 /* AppDelegate.h */,
 				09BEADFA158618D900144302 /* AppDelegate.m */,
-				09BEADFC158618D900144302 /* MainStoryboard.storyboard */,
-				09BEADFF158618D900144302 /* FirstViewController.h */,
-				09BEAE00158618D900144302 /* FirstViewController.m */,
-				09BEAE02158618D900144302 /* first.png */,
-				09BEAE04158618D900144302 /* first@2x.png */,
-				09BEAE06158618D900144302 /* SecondViewController.h */,
-				09BEAE07158618D900144302 /* SecondViewController.m */,
-				09BEAE09158618D900144302 /* second.png */,
-				09BEAE0B158618D900144302 /* second@2x.png */,
+				09BEAE14158619DD00144302 /* MainStoryboard.storyboard */,
+				09BEAE2715861EF100144302 /* Authentication */,
+				09BEAE2415861EB500144302 /* Passport */,
+				09BEAE2515861EC900144302 /* Scans */,
+				09BEAE2615861ED500144302 /* Settings */,
+				09BEAE9C15868C7E00144302 /* DataAccess */,
+				09BEAE4815865BF800144302 /* Helpers */,
 				09BEADF1158618D900144302 /* Supporting Files */,
+				09BEAE121586199D00144302 /* Resources */,
 			);
 			path = Passport;
 			sourceTree = "<group>";
@@ -107,12 +198,195 @@
 		09BEADF1158618D900144302 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				09BEAEAF1586915E00144302 /* Passport.entitlements */,
 				09BEADF2158618D900144302 /* Passport-Info.plist */,
-				09BEADF3158618D900144302 /* InfoPlist.strings */,
 				09BEADF6158618D900144302 /* main.m */,
 				09BEADF8158618D900144302 /* Passport-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09BEAE121586199D00144302 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				09BEAE3715864DAD00144302 /* passport.png */,
+				09BEAE3815864DAD00144302 /* passport@2.png */,
+				09BEAE3F15864E9600144302 /* scanner.png */,
+				09BEAE4015864E9600144302 /* scanner@2.png */,
+				09BEAE3B15864E5C00144302 /* settings.png */,
+				09BEAE3C15864E5C00144302 /* settings@2.png */,
+				099FB28915879C03009D4A05 /* e-mail.template */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		09BEAE2415861EB500144302 /* Passport */ = {
+			isa = PBXGroup;
+			children = (
+				09BEADFF158618D900144302 /* PassportViewController.h */,
+				09BEAE00158618D900144302 /* PassportViewController.m */,
+			);
+			name = Passport;
+			sourceTree = "<group>";
+		};
+		09BEAE2515861EC900144302 /* Scans */ = {
+			isa = PBXGroup;
+			children = (
+				09BEAE1D15861BE100144302 /* ScansViewController.h */,
+				09BEAE1E15861BE100144302 /* ScansViewController.m */,
+			);
+			name = Scans;
+			sourceTree = "<group>";
+		};
+		09BEAE2615861ED500144302 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				09BEAE06158618D900144302 /* SettingsViewController.h */,
+				09BEAE07158618D900144302 /* SettingsViewController.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		09BEAE2715861EF100144302 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				09BEAE2115861E9C00144302 /* LoginViewController.h */,
+				09BEAE2215861E9C00144302 /* LoginViewController.m */,
+				09BEAE2815861F4600144302 /* PasswordViewController.h */,
+				09BEAE2915861F4600144302 /* PasswordViewController.m */,
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
+		09BEAE43158656BA00144302 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				09BEAE44158656DF00144302 /* Passport.h */,
+				09BEAE45158656DF00144302 /* Passport.m */,
+				09BEAE471586575A00144302 /* Gender.h */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		09BEAE4815865BF800144302 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				09BEAE4915865C0C00144302 /* NSCoding.h */,
+				098CEB54158720A10047294E /* NSDate+Formatter.h */,
+				098CEB55158720A10047294E /* NSDate+Formatter.m */,
+				099FB28B1587A09B009D4A05 /* MailComposer.h */,
+				099FB28C1587A09C009D4A05 /* MailComposer.m */,
+				0927E2BE1587B0BE00B3EA3B /* GenderFormatter.h */,
+				0927E2BF1587B0BE00B3EA3B /* GenderFormatter.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		09BEAE5C158676F600144302 /* ActionSheetPicker */ = {
+			isa = PBXGroup;
+			children = (
+				09BEAE5D158676F600144302 /* .gitignore */,
+				09BEAE5E158676F600144302 /* ActionSheetPicker.h */,
+				09BEAE5F158676F600144302 /* AUTHORS */,
+				09BEAE60158676F600144302 /* LICENSE */,
+				09BEAE61158676F600144302 /* Pickers */,
+				09BEAE6C158676F600144302 /* README.md */,
+				09BEAE6D158676F600144302 /* Sample */,
+			);
+			path = ActionSheetPicker;
+			sourceTree = "<group>";
+		};
+		09BEAE61158676F600144302 /* Pickers */ = {
+			isa = PBXGroup;
+			children = (
+				09BEAE62158676F600144302 /* AbstractActionSheetPicker.h */,
+				09BEAE63158676F600144302 /* AbstractActionSheetPicker.m */,
+				09BEAE64158676F600144302 /* ActionSheetDatePicker.h */,
+				09BEAE65158676F600144302 /* ActionSheetDatePicker.m */,
+				09BEAE66158676F600144302 /* ActionSheetDistancePicker.h */,
+				09BEAE67158676F600144302 /* ActionSheetDistancePicker.m */,
+				09BEAE68158676F600144302 /* ActionSheetStringPicker.h */,
+				09BEAE69158676F600144302 /* ActionSheetStringPicker.m */,
+				09BEAE6A158676F600144302 /* DistancePickerView.h */,
+				09BEAE6B158676F600144302 /* DistancePickerView.m */,
+			);
+			path = Pickers;
+			sourceTree = "<group>";
+		};
+		09BEAE6D158676F600144302 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				09BEAE6E158676F600144302 /* ActionSheetPicker-Info.plist */,
+				09BEAE6F158676F600144302 /* ActionSheetPicker.xcodeproj */,
+				09BEAE72158676F600144302 /* ActionSheetPicker_Prefix.pch */,
+				09BEAE73158676F600144302 /* ActionSheetPickerViewController-iPad.xib */,
+				09BEAE74158676F600144302 /* ActionSheetPickerViewController.xib */,
+				09BEAE75158676F600144302 /* Classes */,
+				09BEAE7C158676F600144302 /* iPad */,
+				09BEAE7E158676F600144302 /* main.m */,
+				09BEAE7F158676F600144302 /* MainWindow.xib */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		09BEAE70158676F600144302 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09BEAE98158676F600144302 /* ActionSheetPicker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09BEAE75158676F600144302 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				09BEAE76158676F600144302 /* ActionSheetPickerAppDelegate.h */,
+				09BEAE77158676F600144302 /* ActionSheetPickerAppDelegate.m */,
+				09BEAE78158676F600144302 /* ActionSheetPickerViewController.h */,
+				09BEAE79158676F600144302 /* ActionSheetPickerViewController.m */,
+				09BEAE7A158676F600144302 /* NSDate+TCUtils.h */,
+				09BEAE7B158676F600144302 /* NSDate+TCUtils.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		09BEAE7C158676F600144302 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				09BEAE7D158676F600144302 /* MainWindow-iPad.xib */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		09BEAE9C15868C7E00144302 /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				09BEAE43158656BA00144302 /* Model */,
+				09BEAE9D15868C9200144302 /* Repositories */,
+			);
+			name = DataAccess;
+			sourceTree = "<group>";
+		};
+		09BEAE9D15868C9200144302 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				09BEAE9E15868CBD00144302 /* PassportRepository.h */,
+				09BEAE9F15868CBD00144302 /* PassportRepository.m */,
+			);
+			name = Repositories;
+			sourceTree = "<group>";
+		};
+		09BEAEA11586905F00144302 /* UICKeyChainStore */ = {
+			isa = PBXGroup;
+			children = (
+				09BEAEA21586905F00144302 /* .gitattributes */,
+				09BEAEA31586905F00144302 /* .gitignore */,
+				09BEAEA41586905F00144302 /* LICENSE */,
+				09BEAEA51586905F00144302 /* README.md */,
+				09BEAEA61586905F00144302 /* UICKeyChainStore.h */,
+				09BEAEA71586905F00144302 /* UICKeyChainStore.m */,
+			);
+			path = UICKeyChainStore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +428,12 @@
 			mainGroup = 09BEADDB158618D900144302;
 			productRefGroup = 09BEADE7158618D900144302 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 09BEAE70158676F600144302 /* Products */;
+					ProjectRef = 09BEAE6F158676F600144302 /* ActionSheetPicker.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				09BEADE5158618D900144302 /* Passport */,
@@ -161,17 +441,29 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		09BEAE98158676F600144302 /* ActionSheetPicker.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ActionSheetPicker.app;
+			remoteRef = 09BEAE97158676F600144302 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		09BEADE4158618D900144302 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09BEADF5158618D900144302 /* InfoPlist.strings in Resources */,
-				09BEADFE158618D900144302 /* MainStoryboard.storyboard in Resources */,
-				09BEAE03158618D900144302 /* first.png in Resources */,
-				09BEAE05158618D900144302 /* first@2x.png in Resources */,
-				09BEAE0A158618D900144302 /* second.png in Resources */,
-				09BEAE0C158618D900144302 /* second@2x.png in Resources */,
+				09BEAE13158619DD00144302 /* MainStoryboard.storyboard in Resources */,
+				09BEAE3915864DAD00144302 /* passport.png in Resources */,
+				09BEAE3A15864DAD00144302 /* passport@2.png in Resources */,
+				09BEAE3D15864E5C00144302 /* settings.png in Resources */,
+				09BEAE3E15864E5C00144302 /* settings@2.png in Resources */,
+				09BEAE4115864E9600144302 /* scanner.png in Resources */,
+				09BEAE4215864E9600144302 /* scanner@2.png in Resources */,
+				099FB28A15879C04009D4A05 /* e-mail.template in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,31 +476,26 @@
 			files = (
 				09BEADF7158618D900144302 /* main.m in Sources */,
 				09BEADFB158618D900144302 /* AppDelegate.m in Sources */,
-				09BEAE01158618D900144302 /* FirstViewController.m in Sources */,
-				09BEAE08158618D900144302 /* SecondViewController.m in Sources */,
+				09BEAE01158618D900144302 /* PassportViewController.m in Sources */,
+				09BEAE08158618D900144302 /* SettingsViewController.m in Sources */,
+				09BEAE1F15861BE100144302 /* ScansViewController.m in Sources */,
+				09BEAE2315861E9C00144302 /* LoginViewController.m in Sources */,
+				09BEAE2A15861F4600144302 /* PasswordViewController.m in Sources */,
+				09BEAE46158656DF00144302 /* Passport.m in Sources */,
+				09BEAE87158676F600144302 /* AbstractActionSheetPicker.m in Sources */,
+				09BEAE88158676F600144302 /* ActionSheetDatePicker.m in Sources */,
+				09BEAE89158676F600144302 /* ActionSheetDistancePicker.m in Sources */,
+				09BEAE8A158676F600144302 /* ActionSheetStringPicker.m in Sources */,
+				09BEAE8B158676F600144302 /* DistancePickerView.m in Sources */,
+				09BEAEA015868CBD00144302 /* PassportRepository.m in Sources */,
+				09BEAEAC1586905F00144302 /* UICKeyChainStore.m in Sources */,
+				098CEB56158720A10047294E /* NSDate+Formatter.m in Sources */,
+				099FB28D1587A09C009D4A05 /* MailComposer.m in Sources */,
+				0927E2C01587B0BE00B3EA3B /* GenderFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		09BEADF3158618D900144302 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				09BEADF4158618D900144302 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		09BEADFC158618D900144302 /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				09BEADFD158618D900144302 /* en */,
-			);
-			name = MainStoryboard.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		09BEAE0D158618D900144302 /* Debug */ = {
@@ -217,7 +504,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -231,7 +518,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -242,15 +530,16 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -259,6 +548,7 @@
 		09BEAE10158618D900144302 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Passport/Passport.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Passport/Passport-Prefix.pch";
 				INFOPLIST_FILE = "Passport/Passport-Info.plist";
@@ -270,6 +560,7 @@
 		09BEAE11158618D900144302 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Passport/Passport.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Passport/Passport-Prefix.pch";
 				INFOPLIST_FILE = "Passport/Passport-Info.plist";
@@ -297,6 +588,7 @@
 				09BEAE11158618D900144302 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,6 @@
+[submodule "ActionSheetPicker"]
+	path = ActionSheetPicker
+	url = git://github.com/TimCinel/ActionSheetPicker.git
+[submodule "UICKeyChainStore"]
+	path = UICKeyChainStore
+	url = git://github.com/kishikawakatsumi/UICKeyChainStore.git
