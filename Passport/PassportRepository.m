@@ -12,8 +12,6 @@
 @implementation PassportRepository
 
 - (Passport *)get {
-    NSLog(@"%@", [UICKeyChainStore keyChainStore]);
-
     NSData *data = [UICKeyChainStore dataForKey:PASSPORT_KEY];
     return data ? [NSKeyedUnarchiver unarchiveObjectWithData:data] : [Passport new];
 }
