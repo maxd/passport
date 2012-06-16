@@ -7,18 +7,19 @@
 #import "MailComposer.h"
 #import "GenderFormatter.h"
 #import "SettingsRepository.h"
+#import "FlurryAnalytics.h"
 
 @interface PassportViewController () <UITextFieldDelegate, UIActionSheetDelegate, MFMailComposeViewControllerDelegate> {
-    IBOutlet UITextField *txtFirstName;
+    IBOutlet UITextField *txtPassportSeries;
+    IBOutlet UITextField *txtPassportNumber;
+
     IBOutlet UITextField *txtLastName;
+    IBOutlet UITextField *txtFirstName;
     IBOutlet UITextField *txtMiddleName;
     IBOutlet UITextField *txtGender;
     IBOutlet UITextField *txtBirthDay;
-    IBOutlet UITextField *txtCity;
     IBOutlet UITextField *txtState;
-
-    IBOutlet UITextField *txtPassportSeries;
-    IBOutlet UITextField *txtPassportNumber;
+    IBOutlet UITextField *txtCity;
 
     IBOutlet UITextField *txtSubdivisionCode;
     IBOutlet UITextField *txtPlaceOfReceipt;
@@ -70,11 +71,13 @@
     if (editing) {
         passport = [passportRepository get];
         [self showPassportData];
+        
+        [FlurryAnalytics logEvent:@"START_EDIT_PASSPORT"];
     } else {
         [self fillPassport];
         [passportRepository save:passport];
         
-        if ([txtPassportSeries.text length] != 0 && [txtPassportNumber.text length] != 0 && [SettingsRepository isValidPassword:@""]) {
+        if ([txtPassportSeries.text length] != 0 && [txtPassportNumber.text length] != 0 && [SettingsRepository isValidPassword:nil]) {
             [self performSegueWithIdentifier:@"ShowPasswordView" sender:self];
         }
     }
@@ -89,6 +92,8 @@
 - (BOOL)tableView:(UITableView *)tableView shouldIndentWhileEditingRowAtIndexPath:(NSIndexPath *)indexPath {
     return NO;
 }
+
+#pragma mark TextField handlers
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
@@ -129,7 +134,7 @@
         ActionSheetDatePicker *datePicker = [[ActionSheetDatePicker alloc]
                                              initWithTitle:@"Дата выдачи"
                                              datePickerMode:UIDatePickerModeDate
-                                             selectedDate:passport.dateOfBirth ? passport.dateOfBirth : [NSDate new]
+                                             selectedDate:passport.dateOfReceipt ? passport.dateOfReceipt : [NSDate new]
                                              target:self
                                              action:@selector(dateOfReceiptWasSelected:origin:)
                                              origin:tableView];
@@ -141,21 +146,33 @@
 - (void)genderWasSelected:(NSNumber *)index origin:(id)origin {
     Gender gender = (Gender) [index integerValue];
 
-    passport.gender = gender;
-    
-    txtGender.text = [GenderFormatter genderToDescription:passport.gender];
+    if (passport.gender != gender) {
+        passport.gender = gender;
+
+        txtGender.text = [GenderFormatter genderToDescription:passport.gender];
+
+        [FlurryAnalytics logEvent:@"FILL_FIELD_GENDER"];
+    }
 }
 
 - (void)birthDateWasSelected:(NSDate *)date origin:(id)origin {
-    passport.dateOfBirth = date;
+    if (![passport.dateOfBirth isEqualToDate:date]) {
+        passport.dateOfBirth = date;
 
-    txtBirthDay.text = [date toLongDate];
+        txtBirthDay.text = [date toLongDate];
+
+        [FlurryAnalytics logEvent:@"FILL_FIELD_BIRTH_DAY"];
+    }
 }
 
 - (void)dateOfReceiptWasSelected:(NSDate *)date origin:(id)origin {
-    passport.dateOfReceipt = date;
-    
-    txtDateOfReceipt.text = [date toLongDate];
+    if (![passport.dateOfReceipt isEqualToDate:date]) {
+        passport.dateOfReceipt = date;
+
+        txtDateOfReceipt.text = [date toLongDate];
+
+        [FlurryAnalytics logEvent:@"FILL_FIELD_DATE_OF_RECEIPT"];
+    }
 }
 
 #pragma mark Passport helpers
@@ -177,18 +194,24 @@
     txtDateOfReceipt.text = [passport.dateOfReceipt toLongDate];
 }
 
+#define FILL_FIELD(field, newValue, eventName) \
+if (![field isEqualToString:newValue]) { \
+    field = newValue; \
+    [FlurryAnalytics logEvent:[NSString stringWithFormat:@"FILL_FIELD_%@", eventName]]; \
+}
+
 - (void)fillPassport {
-    passport.firstName = txtFirstName.text;
-    passport.lastName = txtLastName.text;
-    passport.middleName = txtMiddleName.text;
-    passport.city = txtCity.text;
-    passport.state = txtState.text;
+    FILL_FIELD(passport.passportSeries, txtPassportSeries.text, @"PASSPORT_SERIES")
+    FILL_FIELD(passport.passportNumber, txtPassportNumber.text, @"PASSPORT_NUMBER")
 
-    passport.passportSeries = txtPassportSeries.text;
-    passport.passportNumber = txtPassportNumber.text;
+    FILL_FIELD(passport.lastName, txtLastName.text, @"LAST_NAME")
+    FILL_FIELD(passport.firstName, txtFirstName.text, @"FIRST_NAME")
+    FILL_FIELD(passport.middleName, txtMiddleName.text, @"MIDDLE_NAME")
+    FILL_FIELD(passport.city, txtCity.text, @"CITY")
+    FILL_FIELD(passport.state, txtState.text, @"STATE")
 
-    passport.subdivisionCode = txtSubdivisionCode.text;
-    passport.placeOfReceipt = txtPlaceOfReceipt.text;
+    FILL_FIELD(passport.subdivisionCode, txtSubdivisionCode.text, @"SUBDEVISION_CODE")
+    FILL_FIELD(passport.placeOfReceipt, txtPlaceOfReceipt.text, @"PLACE_OF_RECEIPT")
 }
 
 #pragma mark Send/Print Actions
@@ -216,6 +239,8 @@
 }
 
 - (void)sendMail {
+    [FlurryAnalytics logEvent:@"SEND_MAIL_PASSPORT_DATA"];
+
     MailComposer *mailComposer = [MailComposer new];
     NSString *subject = [mailComposer composeMailSubject:passport];
     NSString *body = [mailComposer composeMailBody:passport];
@@ -233,6 +258,7 @@
 }
 
 - (void)print {
+    [FlurryAnalytics logEvent:@"PRINT_PASSPORT_DATA"];
 
 }
 
