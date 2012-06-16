@@ -1,11 +1,11 @@
-#import "MailComposer.h"
+#import "TextComposer.h"
 #import "Passport.h"
 #import "GenderFormatter.h"
 #import "NSDate+Formatter.h"
 
 #define APPLY_TEMPLATE_PARAMETER(name, value) result = [result stringByReplacingOccurrencesOfString:name withString:value ? value : @"-"];
 
-@implementation MailComposer
+@implementation TextComposer
 
 - (NSString *)composeMailSubject:(Passport *)passport {
     NSString *result = @"Паспортные данные от {last-name} {first-name} {middle-name}";
@@ -22,6 +22,18 @@
     
     NSString *result = [NSString stringWithContentsOfFile:templatePath encoding:NSUTF8StringEncoding error:nil];
 
+    return [self composeBody:result passport:passport];
+}
+
+- (NSString *)composePrintBody:(Passport *)passport {
+    NSString *templatePath = [[NSBundle mainBundle] pathForResource:@"print" ofType:@"template"];
+
+    NSString *result = [NSString stringWithContentsOfFile:templatePath encoding:NSUTF8StringEncoding error:nil];
+
+    return [self composeBody:result passport:passport];
+}
+
+- (NSString *)composeBody:(NSString *)result passport:(Passport *)passport {
     APPLY_TEMPLATE_PARAMETER(@"{first-name}", passport.firstName);
     APPLY_TEMPLATE_PARAMETER(@"{last-name}", passport.lastName);
     APPLY_TEMPLATE_PARAMETER(@"{middle-name}", passport.middleName);
@@ -39,5 +51,5 @@
 
     return result;
 }
-   
+
 @end

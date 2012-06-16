@@ -4,7 +4,7 @@
 #import "ActionSheetPicker.h"
 #import "PassportRepository.h"
 #import "NSDate+Formatter.h"
-#import "MailComposer.h"
+#import "TextComposer.h"
 #import "GenderFormatter.h"
 #import "SettingsRepository.h"
 #import "FlurryAnalytics.h"
@@ -241,9 +241,9 @@ if (![field isEqualToString:newValue]) { \
 - (void)sendMail {
     [FlurryAnalytics logEvent:@"SEND_MAIL_PASSPORT_DATA"];
 
-    MailComposer *mailComposer = [MailComposer new];
-    NSString *subject = [mailComposer composeMailSubject:passport];
-    NSString *body = [mailComposer composeMailBody:passport];
+    TextComposer *textComposer = [TextComposer new];
+    NSString *subject = [textComposer composeMailSubject:passport];
+    NSString *body = [textComposer composeMailBody:passport];
     
     MFMailComposeViewController *controller = [MFMailComposeViewController new];
     controller.mailComposeDelegate = self;
@@ -260,6 +260,22 @@ if (![field isEqualToString:newValue]) { \
 - (void)print {
     [FlurryAnalytics logEvent:@"PRINT_PASSPORT_DATA"];
 
+    TextComposer *textComposer = [TextComposer new];
+
+    UISimpleTextPrintFormatter *printFormatter = [[UISimpleTextPrintFormatter alloc] initWithText:[textComposer composePrintBody:passport]];
+    UIFont *font = [UIFont fontWithName:@"Courier New" size:17.0];
+    printFormatter.font = font;
+
+    UIPrintInfo *printInfo = [UIPrintInfo printInfo];
+    printInfo.outputType = UIPrintInfoOutputGeneral;
+    printInfo.jobName = @"Паспортные данные";
+    printInfo.duplex = UIPrintInfoDuplexNone;
+
+    UIPrintInteractionController *printController = [UIPrintInteractionController sharedPrintController];
+    printController.printInfo = printInfo;
+    printController.showsPageRange = NO;
+    printController.printFormatter = printFormatter;
+    [printController presentAnimated:YES completionHandler:nil];
 }
 
 @end

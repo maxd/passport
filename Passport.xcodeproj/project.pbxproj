@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0927E2BD1587AB3300B3EA3B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0927E2BC1587AB3300B3EA3B /* MessageUI.framework */; };
 		0927E2C01587B0BE00B3EA3B /* GenderFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0927E2BF1587B0BE00B3EA3B /* GenderFormatter.m */; };
+		0944213F158CF72000FFDA71 /* print.template in Resources */ = {isa = PBXBuildFile; fileRef = 0944213E158CF72000FFDA71 /* print.template */; };
 		097FFAE1158CBFA900CDB220 /* libFlurryAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 097FFAE0158CBFA900CDB220 /* libFlurryAnalytics.a */; };
 		098CEB56158720A10047294E /* NSDate+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 098CEB55158720A10047294E /* NSDate+Formatter.m */; };
 		0991FA48158934880075A50F /* SettingsRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 0991FA47158934880075A50F /* SettingsRepository.m */; };
@@ -18,7 +19,7 @@
 		0993A42A158C82DA009DB6E7 /* button_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 0993A428158C82DA009DB6E7 /* button_green.png */; };
 		0993A42D158C854C009DB6E7 /* UIButton+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0993A42C158C854C009DB6E7 /* UIButton+Gradient.m */; };
 		099FB28A15879C04009D4A05 /* e-mail.template in Resources */ = {isa = PBXBuildFile; fileRef = 099FB28915879C03009D4A05 /* e-mail.template */; };
-		099FB28D1587A09C009D4A05 /* MailComposer.m in Sources */ = {isa = PBXBuildFile; fileRef = 099FB28C1587A09C009D4A05 /* MailComposer.m */; };
+		099FB28D1587A09C009D4A05 /* TextComposer.m in Sources */ = {isa = PBXBuildFile; fileRef = 099FB28C1587A09C009D4A05 /* TextComposer.m */; };
 		09BEADEB158618D900144302 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BEADEA158618D900144302 /* UIKit.framework */; };
 		09BEADED158618D900144302 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BEADEC158618D900144302 /* Foundation.framework */; };
 		09BEADEF158618D900144302 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BEADEE158618D900144302 /* CoreGraphics.framework */; };
@@ -61,6 +62,7 @@
 		0927E2BC1587AB3300B3EA3B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		0927E2BE1587B0BE00B3EA3B /* GenderFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenderFormatter.h; sourceTree = "<group>"; };
 		0927E2BF1587B0BE00B3EA3B /* GenderFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenderFormatter.m; sourceTree = "<group>"; };
+		0944213E158CF72000FFDA71 /* print.template */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; path = print.template; sourceTree = "<group>"; };
 		097FFADF158CBFA900CDB220 /* FlurryAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAnalytics.h; sourceTree = "<group>"; };
 		097FFAE0158CBFA900CDB220 /* libFlurryAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurryAnalytics.a; sourceTree = "<group>"; };
 		098CEB54158720A10047294E /* NSDate+Formatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Formatter.h"; sourceTree = "<group>"; };
@@ -76,8 +78,8 @@
 		0993A42B158C854C009DB6E7 /* UIButton+Gradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Gradient.h"; sourceTree = "<group>"; };
 		0993A42C158C854C009DB6E7 /* UIButton+Gradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Gradient.m"; sourceTree = "<group>"; };
 		099FB28915879C03009D4A05 /* e-mail.template */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; path = "e-mail.template"; sourceTree = "<group>"; usesTabs = 0; };
-		099FB28B1587A09B009D4A05 /* MailComposer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailComposer.h; sourceTree = "<group>"; };
-		099FB28C1587A09C009D4A05 /* MailComposer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailComposer.m; sourceTree = "<group>"; };
+		099FB28B1587A09B009D4A05 /* TextComposer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextComposer.h; sourceTree = "<group>"; };
+		099FB28C1587A09C009D4A05 /* TextComposer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextComposer.m; sourceTree = "<group>"; };
 		09BEADE6158618D900144302 /* Passport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Passport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09BEADEA158618D900144302 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		09BEADEC158618D900144302 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -258,6 +260,7 @@
 				09BEAE3B15864E5C00144302 /* settings.png */,
 				09BEAE3C15864E5C00144302 /* settings@2x.png */,
 				099FB28915879C03009D4A05 /* e-mail.template */,
+				0944213E158CF72000FFDA71 /* print.template */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -316,8 +319,8 @@
 				09BEAE4915865C0C00144302 /* NSCoding.h */,
 				098CEB54158720A10047294E /* NSDate+Formatter.h */,
 				098CEB55158720A10047294E /* NSDate+Formatter.m */,
-				099FB28B1587A09B009D4A05 /* MailComposer.h */,
-				099FB28C1587A09C009D4A05 /* MailComposer.m */,
+				099FB28B1587A09B009D4A05 /* TextComposer.h */,
+				099FB28C1587A09C009D4A05 /* TextComposer.m */,
 				0927E2BE1587B0BE00B3EA3B /* GenderFormatter.h */,
 				0927E2BF1587B0BE00B3EA3B /* GenderFormatter.m */,
 				0993A424158C7059009DB6E7 /* NSString+Hash.h */,
@@ -514,6 +517,7 @@
 				099FB28A15879C04009D4A05 /* e-mail.template in Resources */,
 				0993A429158C82DA009DB6E7 /* button_green@2x.png in Resources */,
 				0993A42A158C82DA009DB6E7 /* button_green.png in Resources */,
+				0944213F158CF72000FFDA71 /* print.template in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,7 +544,7 @@
 				09BEAEA015868CBD00144302 /* PassportRepository.m in Sources */,
 				09BEAEAC1586905F00144302 /* UICKeyChainStore.m in Sources */,
 				098CEB56158720A10047294E /* NSDate+Formatter.m in Sources */,
-				099FB28D1587A09C009D4A05 /* MailComposer.m in Sources */,
+				099FB28D1587A09C009D4A05 /* TextComposer.m in Sources */,
 				0927E2C01587B0BE00B3EA3B /* GenderFormatter.m in Sources */,
 				0991FA48158934880075A50F /* SettingsRepository.m in Sources */,
 				0991FA4C1589437F0075A50F /* MainViewController.m in Sources */,

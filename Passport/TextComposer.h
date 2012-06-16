@@ -2,9 +2,11 @@
 
 @class Passport;
 
-@interface MailComposer : NSObject
+@interface TextComposer : NSObject
 
 - (NSString *)composeMailSubject:(Passport *)passport;
 - (NSString *)composeMailBody:(Passport *)passport;
+
+- (NSString *)composePrintBody:(Passport *)passport;
 
 @end

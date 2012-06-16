@@ -1,5 +1,3 @@
-Паспортные данные отправлены из программы Паспорт (iOS).
-
 Номер паспорта:     {passport-series} {passport-number}
 
 Владелец:           {last-name} {first-name} {middle-name}
