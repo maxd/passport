@@ -45,9 +45,11 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
 
-    passport = [passportRepository get];
+    if (!self.isEditing) {
+        passport = [passportRepository get];
 
-    [self showPassportData];
+        [self showPassportData];
+    }
 }
 
 - (void)setEditing:(BOOL)editing animated:(BOOL)animated {
@@ -102,7 +104,7 @@
         ActionSheetStringPicker *stringPicker = [[ActionSheetStringPicker alloc]
                 initWithTitle:@"Пол"
                          rows:genders
-             initialSelection:passport.gender
+             initialSelection:passport.gender == UnknownGender ? Male : passport.gender
                        target:self
                 successAction:@selector(genderWasSelected:origin:)
                  cancelAction:nil
