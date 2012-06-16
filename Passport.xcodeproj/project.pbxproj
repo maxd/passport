@@ -10,6 +10,12 @@
 		0927E2BD1587AB3300B3EA3B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0927E2BC1587AB3300B3EA3B /* MessageUI.framework */; };
 		0927E2C01587B0BE00B3EA3B /* GenderFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0927E2BF1587B0BE00B3EA3B /* GenderFormatter.m */; };
 		098CEB56158720A10047294E /* NSDate+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 098CEB55158720A10047294E /* NSDate+Formatter.m */; };
+		0991FA48158934880075A50F /* SettingsRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 0991FA47158934880075A50F /* SettingsRepository.m */; };
+		0991FA4C1589437F0075A50F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0991FA4B1589437F0075A50F /* MainViewController.m */; };
+		0993A426158C7059009DB6E7 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 0993A425158C7059009DB6E7 /* NSString+Hash.m */; };
+		0993A429158C82DA009DB6E7 /* button_green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0993A427158C82DA009DB6E7 /* button_green@2x.png */; };
+		0993A42A158C82DA009DB6E7 /* button_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 0993A428158C82DA009DB6E7 /* button_green.png */; };
+		0993A42D158C854C009DB6E7 /* UIButton+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0993A42C158C854C009DB6E7 /* UIButton+Gradient.m */; };
 		099FB28A15879C04009D4A05 /* e-mail.template in Resources */ = {isa = PBXBuildFile; fileRef = 099FB28915879C03009D4A05 /* e-mail.template */; };
 		099FB28D1587A09C009D4A05 /* MailComposer.m in Sources */ = {isa = PBXBuildFile; fileRef = 099FB28C1587A09C009D4A05 /* MailComposer.m */; };
 		09BEADEB158618D900144302 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BEADEA158618D900144302 /* UIKit.framework */; };
@@ -24,11 +30,11 @@
 		09BEAE2315861E9C00144302 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BEAE2215861E9C00144302 /* LoginViewController.m */; };
 		09BEAE2A15861F4600144302 /* PasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BEAE2915861F4600144302 /* PasswordViewController.m */; };
 		09BEAE3915864DAD00144302 /* passport.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BEAE3715864DAD00144302 /* passport.png */; };
-		09BEAE3A15864DAD00144302 /* passport@2.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BEAE3815864DAD00144302 /* passport@2.png */; };
+		09BEAE3A15864DAD00144302 /* passport@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BEAE3815864DAD00144302 /* passport@2x.png */; };
 		09BEAE3D15864E5C00144302 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BEAE3B15864E5C00144302 /* settings.png */; };
-		09BEAE3E15864E5C00144302 /* settings@2.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BEAE3C15864E5C00144302 /* settings@2.png */; };
+		09BEAE3E15864E5C00144302 /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BEAE3C15864E5C00144302 /* settings@2x.png */; };
 		09BEAE4115864E9600144302 /* scanner.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BEAE3F15864E9600144302 /* scanner.png */; };
-		09BEAE4215864E9600144302 /* scanner@2.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BEAE4015864E9600144302 /* scanner@2.png */; };
+		09BEAE4215864E9600144302 /* scanner@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BEAE4015864E9600144302 /* scanner@2x.png */; };
 		09BEAE46158656DF00144302 /* Passport.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BEAE45158656DF00144302 /* Passport.m */; };
 		09BEAE87158676F600144302 /* AbstractActionSheetPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BEAE63158676F600144302 /* AbstractActionSheetPicker.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		09BEAE88158676F600144302 /* ActionSheetDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BEAE65158676F600144302 /* ActionSheetDatePicker.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -56,7 +62,17 @@
 		0927E2BF1587B0BE00B3EA3B /* GenderFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenderFormatter.m; sourceTree = "<group>"; };
 		098CEB54158720A10047294E /* NSDate+Formatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Formatter.h"; sourceTree = "<group>"; };
 		098CEB55158720A10047294E /* NSDate+Formatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Formatter.m"; sourceTree = "<group>"; };
-		099FB28915879C03009D4A05 /* e-mail.template */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; path = "e-mail.template"; sourceTree = "<group>"; };
+		0991FA46158934880075A50F /* SettingsRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsRepository.h; sourceTree = "<group>"; };
+		0991FA47158934880075A50F /* SettingsRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsRepository.m; sourceTree = "<group>"; };
+		0991FA4A1589437F0075A50F /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		0991FA4B1589437F0075A50F /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		0993A424158C7059009DB6E7 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		0993A425158C7059009DB6E7 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
+		0993A427158C82DA009DB6E7 /* button_green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_green@2x.png"; sourceTree = "<group>"; };
+		0993A428158C82DA009DB6E7 /* button_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_green.png; sourceTree = "<group>"; };
+		0993A42B158C854C009DB6E7 /* UIButton+Gradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Gradient.h"; sourceTree = "<group>"; };
+		0993A42C158C854C009DB6E7 /* UIButton+Gradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Gradient.m"; sourceTree = "<group>"; };
+		099FB28915879C03009D4A05 /* e-mail.template */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; path = "e-mail.template"; sourceTree = "<group>"; usesTabs = 0; };
 		099FB28B1587A09B009D4A05 /* MailComposer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailComposer.h; sourceTree = "<group>"; };
 		099FB28C1587A09C009D4A05 /* MailComposer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailComposer.m; sourceTree = "<group>"; };
 		09BEADE6158618D900144302 /* Passport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Passport.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,11 +96,11 @@
 		09BEAE2815861F4600144302 /* PasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordViewController.h; sourceTree = "<group>"; };
 		09BEAE2915861F4600144302 /* PasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordViewController.m; sourceTree = "<group>"; };
 		09BEAE3715864DAD00144302 /* passport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = passport.png; sourceTree = "<group>"; };
-		09BEAE3815864DAD00144302 /* passport@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "passport@2.png"; sourceTree = "<group>"; };
+		09BEAE3815864DAD00144302 /* passport@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "passport@2x.png"; sourceTree = "<group>"; };
 		09BEAE3B15864E5C00144302 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
-		09BEAE3C15864E5C00144302 /* settings@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2.png"; sourceTree = "<group>"; };
+		09BEAE3C15864E5C00144302 /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
 		09BEAE3F15864E9600144302 /* scanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scanner.png; sourceTree = "<group>"; };
-		09BEAE4015864E9600144302 /* scanner@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scanner@2.png"; sourceTree = "<group>"; };
+		09BEAE4015864E9600144302 /* scanner@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scanner@2x.png"; sourceTree = "<group>"; };
 		09BEAE44158656DF00144302 /* Passport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Passport.h; sourceTree = "<group>"; };
 		09BEAE45158656DF00144302 /* Passport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Passport.m; sourceTree = "<group>"; };
 		09BEAE471586575A00144302 /* Gender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gender.h; sourceTree = "<group>"; };
@@ -146,6 +162,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0991FA49158943570075A50F /* General */ = {
+			isa = PBXGroup;
+			children = (
+				0991FA4A1589437F0075A50F /* MainViewController.h */,
+				0991FA4B1589437F0075A50F /* MainViewController.m */,
+			);
+			name = General;
+			sourceTree = "<group>";
+		};
 		09BEADDB158618D900144302 = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +208,7 @@
 				09BEADF9158618D900144302 /* AppDelegate.h */,
 				09BEADFA158618D900144302 /* AppDelegate.m */,
 				09BEAE14158619DD00144302 /* MainStoryboard.storyboard */,
+				0991FA49158943570075A50F /* General */,
 				09BEAE2715861EF100144302 /* Authentication */,
 				09BEAE2415861EB500144302 /* Passport */,
 				09BEAE2515861EC900144302 /* Scans */,
@@ -209,12 +235,14 @@
 		09BEAE121586199D00144302 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0993A427158C82DA009DB6E7 /* button_green@2x.png */,
+				0993A428158C82DA009DB6E7 /* button_green.png */,
 				09BEAE3715864DAD00144302 /* passport.png */,
-				09BEAE3815864DAD00144302 /* passport@2.png */,
+				09BEAE3815864DAD00144302 /* passport@2x.png */,
 				09BEAE3F15864E9600144302 /* scanner.png */,
-				09BEAE4015864E9600144302 /* scanner@2.png */,
+				09BEAE4015864E9600144302 /* scanner@2x.png */,
 				09BEAE3B15864E5C00144302 /* settings.png */,
-				09BEAE3C15864E5C00144302 /* settings@2.png */,
+				09BEAE3C15864E5C00144302 /* settings@2x.png */,
 				099FB28915879C03009D4A05 /* e-mail.template */,
 			);
 			path = Resources;
@@ -278,6 +306,10 @@
 				099FB28C1587A09C009D4A05 /* MailComposer.m */,
 				0927E2BE1587B0BE00B3EA3B /* GenderFormatter.h */,
 				0927E2BF1587B0BE00B3EA3B /* GenderFormatter.m */,
+				0993A424158C7059009DB6E7 /* NSString+Hash.h */,
+				0993A425158C7059009DB6E7 /* NSString+Hash.m */,
+				0993A42B158C854C009DB6E7 /* UIButton+Gradient.h */,
+				0993A42C158C854C009DB6E7 /* UIButton+Gradient.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -372,6 +404,8 @@
 			children = (
 				09BEAE9E15868CBD00144302 /* PassportRepository.h */,
 				09BEAE9F15868CBD00144302 /* PassportRepository.m */,
+				0991FA46158934880075A50F /* SettingsRepository.h */,
+				0991FA47158934880075A50F /* SettingsRepository.m */,
 			);
 			name = Repositories;
 			sourceTree = "<group>";
@@ -458,12 +492,14 @@
 			files = (
 				09BEAE13158619DD00144302 /* MainStoryboard.storyboard in Resources */,
 				09BEAE3915864DAD00144302 /* passport.png in Resources */,
-				09BEAE3A15864DAD00144302 /* passport@2.png in Resources */,
+				09BEAE3A15864DAD00144302 /* passport@2x.png in Resources */,
 				09BEAE3D15864E5C00144302 /* settings.png in Resources */,
-				09BEAE3E15864E5C00144302 /* settings@2.png in Resources */,
+				09BEAE3E15864E5C00144302 /* settings@2x.png in Resources */,
 				09BEAE4115864E9600144302 /* scanner.png in Resources */,
-				09BEAE4215864E9600144302 /* scanner@2.png in Resources */,
+				09BEAE4215864E9600144302 /* scanner@2x.png in Resources */,
 				099FB28A15879C04009D4A05 /* e-mail.template in Resources */,
+				0993A429158C82DA009DB6E7 /* button_green@2x.png in Resources */,
+				0993A42A158C82DA009DB6E7 /* button_green.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +528,10 @@
 				098CEB56158720A10047294E /* NSDate+Formatter.m in Sources */,
 				099FB28D1587A09C009D4A05 /* MailComposer.m in Sources */,
 				0927E2C01587B0BE00B3EA3B /* GenderFormatter.m in Sources */,
+				0991FA48158934880075A50F /* SettingsRepository.m in Sources */,
+				0991FA4C1589437F0075A50F /* MainViewController.m in Sources */,
+				0993A426158C7059009DB6E7 /* NSString+Hash.m in Sources */,
+				0993A42D158C854C009DB6E7 /* UIButton+Gradient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

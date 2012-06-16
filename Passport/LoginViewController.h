@@ -1,5 +1,7 @@
 #import <UIKit/UIKit.h>
 
-@interface LoginViewController : UIViewController
+@interface LoginViewController : UITableViewController
+
+- (IBAction)login:(id)sender;
 
 @end

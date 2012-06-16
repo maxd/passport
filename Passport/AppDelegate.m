@@ -1,4 +1,5 @@
 #import "AppDelegate.h"
+#import "UICKeyChainStore.h"
 
 @implementation AppDelegate
 
@@ -6,6 +7,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+//    [UICKeyChainStore removeAllItems];
+//    NSLog(@"%@", [UICKeyChainStore keyChainStore]);
     return YES;
 }
 

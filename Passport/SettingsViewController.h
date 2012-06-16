@@ -2,4 +2,6 @@
 
 @interface SettingsViewController : UITableViewController
 
+- (IBAction)changePassword:(id)sender;
+
 @end

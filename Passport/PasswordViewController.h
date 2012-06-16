@@ -1,5 +1,7 @@
 #import <UIKit/UIKit.h>
 
-@interface PasswordViewController : UIViewController
+@interface PasswordViewController : UITableViewController
+
+- (IBAction)confirmPassword:(id)sender;
 
 @end

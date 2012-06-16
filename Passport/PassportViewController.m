@@ -6,6 +6,7 @@
 #import "NSDate+Formatter.h"
 #import "MailComposer.h"
 #import "GenderFormatter.h"
+#import "SettingsRepository.h"
 
 @interface PassportViewController () <UITextFieldDelegate, UIActionSheetDelegate, MFMailComposeViewControllerDelegate> {
     IBOutlet UITextField *txtFirstName;
@@ -49,11 +50,6 @@
     [self showPassportData];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-}
-
 - (void)setEditing:(BOOL)editing animated:(BOOL)animated {
     [super setEditing:editing animated:animated];
 
@@ -75,6 +71,10 @@
     } else {
         [self fillPassport];
         [passportRepository save:passport];
+        
+        if ([txtPassportSeries.text length] != 0 && [txtPassportNumber.text length] != 0 && [SettingsRepository isValidPassword:@""]) {
+            [self performSegueWithIdentifier:@"ShowPasswordView" sender:self];
+        }
     }
 }
 
