@@ -2,7 +2,7 @@
 
 Владелец:           {last-name} {first-name} {middle-name}
 Пол:                {gender}
-Дата рождения:      {day-of-birth}
+Дата рождения:      {date-of-birth}
 Место рождения:
                     {state}
                     {city}

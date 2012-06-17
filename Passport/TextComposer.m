@@ -38,7 +38,7 @@
     APPLY_TEMPLATE_PARAMETER(@"{last-name}", passport.lastName);
     APPLY_TEMPLATE_PARAMETER(@"{middle-name}", passport.middleName);
     APPLY_TEMPLATE_PARAMETER(@"{gender}", [GenderFormatter genderToDescription:passport.gender]);
-    APPLY_TEMPLATE_PARAMETER(@"{day-of-birth}", [passport.dateOfBirth toLongDate]);
+    APPLY_TEMPLATE_PARAMETER(@"{date-of-birth}", [passport.dateOfBirth toLongDate]);
     APPLY_TEMPLATE_PARAMETER(@"{state}", passport.state);
     APPLY_TEMPLATE_PARAMETER(@"{city}", passport.city);
 
