@@ -85,7 +85,7 @@
 		099FB28915879C03009D4A05 /* e-mail.template */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; path = "e-mail.template"; sourceTree = "<group>"; usesTabs = 0; };
 		099FB28B1587A09B009D4A05 /* TextComposer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextComposer.h; sourceTree = "<group>"; };
 		099FB28C1587A09C009D4A05 /* TextComposer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextComposer.m; sourceTree = "<group>"; };
-		09BEADE6158618D900144302 /* Passport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Passport.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09BEADE6158618D900144302 /* passport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = passport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09BEADEA158618D900144302 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		09BEADEC158618D900144302 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		09BEADEE158618D900144302 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -206,7 +206,7 @@
 		09BEADE7158618D900144302 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				09BEADE6158618D900144302 /* Passport.app */,
+				09BEADE6158618D900144302 /* passport.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -464,7 +464,7 @@
 			);
 			name = Passport;
 			productName = Passport;
-			productReference = 09BEADE6158618D900144302 /* Passport.app */;
+			productReference = 09BEADE6158618D900144302 /* passport.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -572,7 +572,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Maxim Dobryakov";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = ENABLE_FLURRY;
@@ -582,7 +582,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "C1F83973-A536-463A-8435-1F9048C8A473";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -599,7 +599,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/FlurryAnalytics\"",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = passport;
 				WRAPPER_EXTENSION = app;
 			};
 			name = AdHoc;
@@ -637,7 +637,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Maxim Dobryakov";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = ENABLE_FLURRY;
@@ -647,7 +647,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "7DF2FDB4-CEE6-4678-BFC5-1C09B2DBCAB0";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -664,7 +664,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/FlurryAnalytics\"",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = passport;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -680,7 +680,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/FlurryAnalytics\"",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = passport;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
