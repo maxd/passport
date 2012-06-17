@@ -18,6 +18,8 @@
     [super viewWillAppear:animated];
 
     [btConfirmPassword greenGradient];
+
+    [txtPassword becomeFirstResponder];
 }
 
 #pragma mark Handlers
