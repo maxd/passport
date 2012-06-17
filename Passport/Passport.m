@@ -1,5 +1,4 @@
 #import "Passport.h"
-#import "NSCoding.h"
 
 @implementation Passport
 
@@ -24,46 +23,6 @@
         _gender = UnknownGender;
     }
     return self;
-}
-
-- (id)initWithCoder:(NSCoder *)decoder
-{
-    self = [super init];
-    if (self) {
-        DECODEOBJECT(_firstName);
-        DECODEOBJECT(_lastName);
-        DECODEOBJECT(_middleName);
-        DECODEINT(_gender);
-        DECODEOBJECT(_dateOfBirth);
-        DECODEOBJECT(_city);
-        DECODEOBJECT(_state);
-
-        DECODEOBJECT(_passportSeries);
-        DECODEOBJECT(_passportNumber);
-
-        DECODEOBJECT(_subdivisionCode);
-        DECODEOBJECT(_placeOfReceipt);
-        DECODEOBJECT(_dateOfReceipt);
-    }
-    return self;
-}
-
-- (void)encodeWithCoder:(NSCoder *)coder
-{
-    ENCODEOBJECT(_firstName);
-    ENCODEOBJECT(_lastName);
-    ENCODEOBJECT(_middleName);
-    ENCODEINT(_gender);
-    ENCODEOBJECT(_dateOfBirth);
-    ENCODEOBJECT(_city);
-    ENCODEOBJECT(_state);
-
-    ENCODEOBJECT(_passportSeries);
-    ENCODEOBJECT(_passportNumber);
-
-    ENCODEOBJECT(_subdivisionCode);
-    ENCODEOBJECT(_placeOfReceipt);
-    ENCODEOBJECT(_dateOfReceipt);
 }
 
 @end

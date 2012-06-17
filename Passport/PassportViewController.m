@@ -109,7 +109,7 @@
         ActionSheetStringPicker *stringPicker = [[ActionSheetStringPicker alloc]
                 initWithTitle:@"Пол"
                          rows:genders
-             initialSelection:passport.gender == UnknownGender ? Male : passport.gender
+             initialSelection:(passport.gender == UnknownGender ? Male : passport.gender) - (int)Male
                        target:self
                 successAction:@selector(genderWasSelected:origin:)
                  cancelAction:nil
@@ -144,7 +144,7 @@
 }
 
 - (void)genderWasSelected:(NSNumber *)index origin:(id)origin {
-    Gender gender = (Gender) [index integerValue];
+    Gender gender = (Gender) ([index integerValue] + (int)Male);
 
     if (passport.gender != gender) {
         passport.gender = gender;

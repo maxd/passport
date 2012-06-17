@@ -109,7 +109,6 @@
 		09BEAE44158656DF00144302 /* Passport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Passport.h; sourceTree = "<group>"; };
 		09BEAE45158656DF00144302 /* Passport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Passport.m; sourceTree = "<group>"; };
 		09BEAE471586575A00144302 /* Gender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gender.h; sourceTree = "<group>"; };
-		09BEAE4915865C0C00144302 /* NSCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCoding.h; sourceTree = "<group>"; };
 		09BEAE5D158676F600144302 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		09BEAE5E158676F600144302 /* ActionSheetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetPicker.h; sourceTree = "<group>"; };
 		09BEAE5F158676F600144302 /* AUTHORS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AUTHORS; sourceTree = "<group>"; };
@@ -316,7 +315,6 @@
 		09BEAE4815865BF800144302 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				09BEAE4915865C0C00144302 /* NSCoding.h */,
 				098CEB54158720A10047294E /* NSDate+Formatter.h */,
 				098CEB55158720A10047294E /* NSDate+Formatter.m */,
 				099FB28B1587A09B009D4A05 /* TextComposer.h */,
@@ -556,6 +554,44 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		09676A77158D12290088351D /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = ENABLE_FLURRY;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AdHoc;
+		};
+		09676A78158D12290088351D /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Passport/Passport.entitlements;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Passport/Passport-Prefix.pch";
+				INFOPLIST_FILE = "Passport/Passport-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/FlurryAnalytics\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = AdHoc;
+		};
 		09BEAE0D158618D900144302 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -645,6 +681,7 @@
 			buildConfigurations = (
 				09BEAE0D158618D900144302 /* Debug */,
 				09BEAE0E158618D900144302 /* Release */,
+				09676A77158D12290088351D /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -654,6 +691,7 @@
 			buildConfigurations = (
 				09BEAE10158618D900144302 /* Debug */,
 				09BEAE11158618D900144302 /* Release */,
+				09676A78158D12290088351D /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
