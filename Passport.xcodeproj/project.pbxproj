@@ -48,6 +48,7 @@
 		09BEAEA015868CBD00144302 /* PassportRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BEAE9F15868CBD00144302 /* PassportRepository.m */; };
 		09BEAEAC1586905F00144302 /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BEAEA71586905F00144302 /* UICKeyChainStore.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		09BEAEAE158690B300144302 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BEAEAD158690B300144302 /* Security.framework */; };
+		9BEAEAF1586915E00144304 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 9BEAEAF1586915E00144303 /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,6 +153,7 @@
 		09BEAEA71586905F00144302 /* UICKeyChainStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICKeyChainStore.m; sourceTree = "<group>"; };
 		09BEAEAD158690B300144302 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		09BEAEAF1586915E00144302 /* Passport.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Passport.entitlements; sourceTree = "<group>"; };
+		9BEAEAF1586915E00144303 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 		09BEADDB158618D900144302 = {
 			isa = PBXGroup;
 			children = (
+				9BEAEAF1586915E00144303 /* README */,
 				093E9B26158E02BE00ED054B /* passport-114x114.png */,
 				093E9B24158E02BA00ED054B /* passport-57x57.png */,
 				09BEADF0158618D900144302 /* Passport */,
@@ -524,6 +527,7 @@
 				0944213F158CF72000FFDA71 /* print.template in Resources */,
 				093E9B25158E02BA00ED054B /* passport-57x57.png in Resources */,
 				093E9B27158E02BE00ED054B /* passport-114x114.png in Resources */,
+				9BEAEAF1586915E00144304 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
