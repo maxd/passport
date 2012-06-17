@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0927E2BD1587AB3300B3EA3B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0927E2BC1587AB3300B3EA3B /* MessageUI.framework */; };
 		0927E2C01587B0BE00B3EA3B /* GenderFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0927E2BF1587B0BE00B3EA3B /* GenderFormatter.m */; };
+		093E9B25158E02BA00ED054B /* passport-57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 093E9B24158E02BA00ED054B /* passport-57x57.png */; };
+		093E9B27158E02BE00ED054B /* passport-114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 093E9B26158E02BE00ED054B /* passport-114x114.png */; };
 		0944213F158CF72000FFDA71 /* print.template in Resources */ = {isa = PBXBuildFile; fileRef = 0944213E158CF72000FFDA71 /* print.template */; };
 		097FFAE1158CBFA900CDB220 /* libFlurryAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 097FFAE0158CBFA900CDB220 /* libFlurryAnalytics.a */; };
 		098CEB56158720A10047294E /* NSDate+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 098CEB55158720A10047294E /* NSDate+Formatter.m */; };
@@ -62,6 +64,8 @@
 		0927E2BC1587AB3300B3EA3B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		0927E2BE1587B0BE00B3EA3B /* GenderFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenderFormatter.h; sourceTree = "<group>"; };
 		0927E2BF1587B0BE00B3EA3B /* GenderFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenderFormatter.m; sourceTree = "<group>"; };
+		093E9B24158E02BA00ED054B /* passport-57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "passport-57x57.png"; sourceTree = "<group>"; };
+		093E9B26158E02BE00ED054B /* passport-114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "passport-114x114.png"; sourceTree = "<group>"; };
 		0944213E158CF72000FFDA71 /* print.template */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; path = print.template; sourceTree = "<group>"; };
 		097FFADF158CBFA900CDB220 /* FlurryAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAnalytics.h; sourceTree = "<group>"; };
 		097FFAE0158CBFA900CDB220 /* libFlurryAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurryAnalytics.a; sourceTree = "<group>"; };
@@ -188,6 +192,8 @@
 		09BEADDB158618D900144302 = {
 			isa = PBXGroup;
 			children = (
+				093E9B26158E02BE00ED054B /* passport-114x114.png */,
+				093E9B24158E02BA00ED054B /* passport-57x57.png */,
 				09BEADF0158618D900144302 /* Passport */,
 				09BEADE9158618D900144302 /* Frameworks */,
 				09BEADE7158618D900144302 /* Products */,
@@ -516,6 +522,8 @@
 				0993A429158C82DA009DB6E7 /* button_green@2x.png in Resources */,
 				0993A42A158C82DA009DB6E7 /* button_green.png in Resources */,
 				0944213F158CF72000FFDA71 /* print.template in Resources */,
+				093E9B25158E02BA00ED054B /* passport-57x57.png in Resources */,
+				093E9B27158E02BE00ED054B /* passport-114x114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
