@@ -13,7 +13,7 @@
 }
 
 + (void)setPassword:(NSString *)password {
-    [UICKeyChainStore setString:password ? password.sha1 : @"" forKey:PASSWORD_KEY];
+    [UICKeyChainStore setString:[password length] != 0 ? password.sha1 : @"" forKey:PASSWORD_KEY];
 }
 
 @end
