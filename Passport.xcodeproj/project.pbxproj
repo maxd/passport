@@ -474,7 +474,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0430;
-				ORGANIZATIONNAME = "Studio Mobile";
+				ORGANIZATIONNAME = protonail.com;
 			};
 			buildConfigurationList = 09BEADE0158618D900144302 /* Build configuration list for PBXProject "Passport" */;
 			compatibilityVersion = "Xcode 3.2";
