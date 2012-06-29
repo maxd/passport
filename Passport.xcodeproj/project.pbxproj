@@ -12,6 +12,9 @@
 		093E9B25158E02BA00ED054B /* passport-57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 093E9B24158E02BA00ED054B /* passport-57x57.png */; };
 		093E9B27158E02BE00ED054B /* passport-114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 093E9B26158E02BE00ED054B /* passport-114x114.png */; };
 		0944213F158CF72000FFDA71 /* print.template in Resources */ = {isa = PBXBuildFile; fileRef = 0944213E158CF72000FFDA71 /* print.template */; };
+		09591ED9159E2491003000D5 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09591ED0159E2491003000D5 /* libGoogleAdMobAds.a */; };
+		09591EDC159E24C4003000D5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09591EDB159E24C4003000D5 /* AudioToolbox.framework */; };
+		09591EDE159E24CF003000D5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09591EDD159E24CF003000D5 /* SystemConfiguration.framework */; };
 		097FFAE1158CBFA900CDB220 /* libFlurryAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 097FFAE0158CBFA900CDB220 /* libFlurryAnalytics.a */; };
 		098CEB56158720A10047294E /* NSDate+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 098CEB55158720A10047294E /* NSDate+Formatter.m */; };
 		0991FA48158934880075A50F /* SettingsRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 0991FA47158934880075A50F /* SettingsRepository.m */; };
@@ -73,6 +76,25 @@
 		093E9B24158E02BA00ED054B /* passport-57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "passport-57x57.png"; sourceTree = "<group>"; };
 		093E9B26158E02BE00ED054B /* passport-114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "passport-114x114.png"; sourceTree = "<group>"; };
 		0944213E158CF72000FFDA71 /* print.template */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; path = print.template; sourceTree = "<group>"; };
+		09591EC7159E2491003000D5 /* GADAdMobExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdMobExtras.h; sourceTree = "<group>"; };
+		09591EC8159E2491003000D5 /* GADAdNetworkExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdNetworkExtras.h; sourceTree = "<group>"; };
+		09591EC9159E2491003000D5 /* GADAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdSize.h; sourceTree = "<group>"; };
+		09591ECA159E2491003000D5 /* GADBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerView.h; sourceTree = "<group>"; };
+		09591ECB159E2491003000D5 /* GADBannerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerViewDelegate.h; sourceTree = "<group>"; };
+		09591ECC159E2491003000D5 /* GADInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitial.h; sourceTree = "<group>"; };
+		09591ECD159E2491003000D5 /* GADInterstitialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitialDelegate.h; sourceTree = "<group>"; };
+		09591ECE159E2491003000D5 /* GADRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequest.h; sourceTree = "<group>"; };
+		09591ECF159E2491003000D5 /* GADRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequestError.h; sourceTree = "<group>"; };
+		09591ED0159E2491003000D5 /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAdMobAds.a; sourceTree = "<group>"; };
+		09591ED2159E2491003000D5 /* GADCustomEventBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADCustomEventBanner.h; sourceTree = "<group>"; };
+		09591ED3159E2491003000D5 /* GADCustomEventBannerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADCustomEventBannerDelegate.h; sourceTree = "<group>"; };
+		09591ED4159E2491003000D5 /* GADCustomEventExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADCustomEventExtras.h; sourceTree = "<group>"; };
+		09591ED5159E2491003000D5 /* GADCustomEventInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADCustomEventInterstitial.h; sourceTree = "<group>"; };
+		09591ED6159E2491003000D5 /* GADCustomEventInterstitialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADCustomEventInterstitialDelegate.h; sourceTree = "<group>"; };
+		09591ED7159E2491003000D5 /* GADCustomEventRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADCustomEventRequest.h; sourceTree = "<group>"; };
+		09591ED8159E2491003000D5 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		09591EDB159E24C4003000D5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		09591EDD159E24CF003000D5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		097FFADF158CBFA900CDB220 /* FlurryAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAnalytics.h; sourceTree = "<group>"; };
 		097FFAE0158CBFA900CDB220 /* libFlurryAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurryAnalytics.a; sourceTree = "<group>"; };
 		098CEB54158720A10047294E /* NSDate+Formatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Formatter.h"; sourceTree = "<group>"; };
@@ -178,18 +200,53 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09591EDE159E24CF003000D5 /* SystemConfiguration.framework in Frameworks */,
+				09591EDC159E24C4003000D5 /* AudioToolbox.framework in Frameworks */,
 				09BEADEB158618D900144302 /* UIKit.framework in Frameworks */,
 				0927E2BD1587AB3300B3EA3B /* MessageUI.framework in Frameworks */,
 				09BEAEAE158690B300144302 /* Security.framework in Frameworks */,
 				09BEADED158618D900144302 /* Foundation.framework in Frameworks */,
 				09BEADEF158618D900144302 /* CoreGraphics.framework in Frameworks */,
 				097FFAE1158CBFA900CDB220 /* libFlurryAnalytics.a in Frameworks */,
+				09591ED9159E2491003000D5 /* libGoogleAdMobAds.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09591EC6159E2491003000D5 /* GoogleAdMobAdsSDK */ = {
+			isa = PBXGroup;
+			children = (
+				09591EC7159E2491003000D5 /* GADAdMobExtras.h */,
+				09591EC8159E2491003000D5 /* GADAdNetworkExtras.h */,
+				09591EC9159E2491003000D5 /* GADAdSize.h */,
+				09591ECA159E2491003000D5 /* GADBannerView.h */,
+				09591ECB159E2491003000D5 /* GADBannerViewDelegate.h */,
+				09591ECC159E2491003000D5 /* GADInterstitial.h */,
+				09591ECD159E2491003000D5 /* GADInterstitialDelegate.h */,
+				09591ECE159E2491003000D5 /* GADRequest.h */,
+				09591ECF159E2491003000D5 /* GADRequestError.h */,
+				09591ED0159E2491003000D5 /* libGoogleAdMobAds.a */,
+				09591ED1159E2491003000D5 /* Mediation */,
+				09591ED8159E2491003000D5 /* README.txt */,
+			);
+			path = GoogleAdMobAdsSDK;
+			sourceTree = "<group>";
+		};
+		09591ED1159E2491003000D5 /* Mediation */ = {
+			isa = PBXGroup;
+			children = (
+				09591ED2159E2491003000D5 /* GADCustomEventBanner.h */,
+				09591ED3159E2491003000D5 /* GADCustomEventBannerDelegate.h */,
+				09591ED4159E2491003000D5 /* GADCustomEventExtras.h */,
+				09591ED5159E2491003000D5 /* GADCustomEventInterstitial.h */,
+				09591ED6159E2491003000D5 /* GADCustomEventInterstitialDelegate.h */,
+				09591ED7159E2491003000D5 /* GADCustomEventRequest.h */,
+			);
+			path = Mediation;
+			sourceTree = "<group>";
+		};
 		097FFADE158CBFA900CDB220 /* FlurryAnalytics */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,10 +288,13 @@
 		09BEADE9158618D900144302 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				09591EC6159E2491003000D5 /* GoogleAdMobAdsSDK */,
 				09D8C6A0159B8EB3004B8583 /* JSONKit */,
 				09BEAEA11586905F00144302 /* UICKeyChainStore */,
 				09BEAE5C158676F600144302 /* ActionSheetPicker */,
 				097FFADE158CBFA900CDB220 /* FlurryAnalytics */,
+				09591EDD159E24CF003000D5 /* SystemConfiguration.framework */,
+				09591EDB159E24C4003000D5 /* AudioToolbox.framework */,
 				0927E2BC1587AB3300B3EA3B /* MessageUI.framework */,
 				09BEAEAD158690B300144302 /* Security.framework */,
 				09BEADEA158618D900144302 /* UIKit.framework */,
@@ -640,6 +700,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/FlurryAnalytics\"",
+					"\"$(SRCROOT)/GoogleAdMobAdsSDK\"",
 				);
 				PRODUCT_NAME = passport;
 				WRAPPER_EXTENSION = app;
@@ -704,6 +765,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/FlurryAnalytics\"",
+					"\"$(SRCROOT)/GoogleAdMobAdsSDK\"",
 				);
 				PRODUCT_NAME = passport;
 				WRAPPER_EXTENSION = app;
@@ -720,6 +782,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/FlurryAnalytics\"",
+					"\"$(SRCROOT)/GoogleAdMobAdsSDK\"",
 				);
 				PRODUCT_NAME = passport;
 				WRAPPER_EXTENSION = app;
