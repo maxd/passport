@@ -2,6 +2,8 @@
 #import "SettingsRepository.h"
 #import "LoginViewController.h"
 #import "GADBannerView.h"
+#import "PassportRepository.h"
+#import "Passport.h"
 
 #define ADMOB_TOKEN @"a14fede9eb5ac32"
 
@@ -27,8 +29,13 @@
     container = [self findContainerView];
     defaultContainerFrame = container.frame;
 
-    [self initializeBanner];
-    [self showBanner];
+    PassportRepository *passportRepository = [PassportRepository new];
+    Passport *passport = [passportRepository get];
+
+    if (passport.passportSeries.length != 0 && passport.passportNumber.length != 0) {
+        [self initializeBanner];
+        [self showBanner];
+    }
 }
 
 - (void)viewDidUnload {
