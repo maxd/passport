@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
     <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
@@ -227,7 +228,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Место рождения" id="ITT-cY-jEJ">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" shouldIndentWhileEditing="NO" id="dcR-Ck-slM">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" shouldIndentWhileEditing="NO" editingAccessoryType="disclosureIndicator" id="dcR-Ck-slM">
                                         <rect key="frame" x="0.0" y="448" width="320" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -246,8 +247,11 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <connections>
+                                            <segue destination="gvb-7f-w5T" kind="push" identifier="ShowStatesView" id="Dps-lw-Pz3"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" shouldIndentWhileEditing="NO" id="WnT-a6-mFo">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" shouldIndentWhileEditing="NO" editingAccessoryType="disclosureIndicator" id="WnT-a6-mFo">
                                         <rect key="frame" x="0.0" y="493" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -266,6 +270,9 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <connections>
+                                            <segue destination="VB6-yi-7f0" kind="push" identifier="ShowCitiesView" id="PiU-nj-PLy"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -364,6 +371,202 @@
                 </tableViewController>
             </objects>
             <point key="canvasLocation" x="1163" y="-451"/>
+        </scene>
+        <!--Cities View Controller - Города-->
+        <scene sceneID="V05-hl-Bet">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a6H-76-4tb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController title="Города" id="VB6-yi-7f0" customClass="CitiesViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="xBM-rf-tju">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" showsCancelButton="YES" id="Lg2-yj-XwB">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="VB6-yi-7f0" id="01p-4Y-koi"/>
+                            </connections>
+                        </searchBar>
+                        <label key="tableFooterView" hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Город не найден." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="NuS-b7-YJp">
+                            <rect key="frame" x="0.0" y="367" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CityCell" textLabel="mzS-fA-12g" style="IBUITableViewCellStyleDefault" id="tqk-79-VRd">
+                                <rect key="frame" x="0.0" y="80" width="320" height="46"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mzS-fA-12g">
+                                            <rect key="frame" x="10" y="0.0" width="280" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="VB6-yi-7f0" id="13I-Ft-5F4"/>
+                            <outlet property="delegate" destination="VB6-yi-7f0" id="Ikb-kH-JiE"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Город" id="pfi-Tu-s7a"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="ctlSearchBar" destination="Lg2-yj-XwB" id="em1-KQ-ixb"/>
+                        <outlet property="lblEmptyTable" destination="NuS-b7-YJp" id="y7N-iN-Gp8"/>
+                        <segue destination="0TB-ck-phN" kind="push" identifier="ShowCustomCityView" id="Vhn-5Q-XJG"/>
+                    </connections>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="1642" y="-1730"/>
+        </scene>
+        <!--Custom City View Controller - Введите город-->
+        <scene sceneID="qXV-4p-hqV">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ICL-Ml-ieM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController storyboardIdentifier="CustomCity" title="Введите город" id="0TB-ck-phN" customClass="CustomCityViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="XfN-BK-UFf">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="pdR-Cj-pzf">
+                            <rect key="frame" x="0.0" y="66" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hcT-M8-WS2">
+                                    <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" title="Выбрать">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="highlighted">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="confirmButtonHandler:" destination="0TB-ck-phN" eventType="touchUpInside" id="kau-5s-oZ8"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <sections>
+                            <tableViewSection id="ota-kP-UqF">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="bjL-DZ-y5F">
+                                        <rect key="frame" x="0.0" y="10" width="320" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Город" minimumFontSize="17" clearButtonMode="whileEditing" id="lHK-sa-d0U">
+                                                    <rect key="frame" x="8" y="0.0" width="284" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="0TB-ck-phN" id="1o1-Sf-uua"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="0TB-ck-phN" id="dRB-Pn-fW8"/>
+                            <outlet property="delegate" destination="0TB-ck-phN" id="1nY-dF-Iyk"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Выберите город" id="cY8-BB-syz"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="btConfirm" destination="hcT-M8-WS2" id="dN2-Wd-Jnq"/>
+                        <outlet property="txtCustomCity" destination="lHK-sa-d0U" id="O0t-NE-Wi2"/>
+                    </connections>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="2168" y="-1730"/>
+        </scene>
+        <!--States View Controller - Области-->
+        <scene sceneID="tc5-bY-jyb">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AdO-wT-gpW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController title="Области" id="gvb-7f-w5T" customClass="StatesViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="yNl-O6-Tn5">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" showsCancelButton="YES" id="d7b-Mf-6wc">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <scopeButtonTitles>
+                                <string>Title</string>
+                                <string>Title</string>
+                            </scopeButtonTitles>
+                            <connections>
+                                <outlet property="delegate" destination="gvb-7f-w5T" id="g3N-jH-KeA"/>
+                            </connections>
+                        </searchBar>
+                        <label key="tableFooterView" hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Область не найдена." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="7vW-fZ-Bfi">
+                            <rect key="frame" x="0.0" y="367" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StateCell" textLabel="Akj-5e-gMm" style="IBUITableViewCellStyleDefault" id="jiQ-Mh-l0s">
+                                <rect key="frame" x="0.0" y="80" width="320" height="46"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Akj-5e-gMm">
+                                            <rect key="frame" x="10" y="0.0" width="280" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="gvb-7f-w5T" id="mjy-lZ-OXS"/>
+                            <outlet property="delegate" destination="gvb-7f-w5T" id="FiO-v7-mHx"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Область" id="1LG-gF-9Fi"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="ctlSearchBar" destination="d7b-Mf-6wc" id="9i0-On-xjN"/>
+                        <outlet property="lblEmptyTable" destination="7vW-fZ-Bfi" id="kWg-FG-gO0"/>
+                    </connections>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="1642" y="-1101"/>
         </scene>
         <!--Password View Controller-->
         <scene sceneID="dRv-oA-5Dx">
@@ -709,6 +912,20 @@
         <image name="settings.png" width="24" height="24"/>
     </resources>
     <classes>
+        <class className="CitiesViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CitiesViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="ctlSearchBar" candidateClass="UISearchBar"/>
+                <relationship kind="outlet" name="lblEmptyTable" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="CustomCityViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomCityViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="btConfirm" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="txtCustomCity" candidateClass="UITextField"/>
+            </relationships>
+        </class>
         <class className="LoginViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginViewController.h"/>
             <relationships>
@@ -756,6 +973,13 @@
                 <relationship kind="outlet" name="btChangePassword" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="txtConfirmPassword" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="txtPassword" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="StatesViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/StatesViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="ctlSearchBar" candidateClass="UISearchBar"/>
+                <relationship kind="outlet" name="lblEmptyTable" candidateClass="UILabel"/>
             </relationships>
         </class>
     </classes>

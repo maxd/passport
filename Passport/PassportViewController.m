@@ -8,8 +8,11 @@
 #import "GenderFormatter.h"
 #import "SettingsRepository.h"
 #import "FlurryAnalytics.h"
+#import "StatesViewController.h"
+#import "CitiesViewController.h"
 
-@interface PassportViewController () <UITextFieldDelegate, UIActionSheetDelegate, MFMailComposeViewControllerDelegate> {
+@interface PassportViewController () <UITextFieldDelegate, UIActionSheetDelegate, MFMailComposeViewControllerDelegate,
+        StatesViewControllerDelegate, CitiesViewControllerDelegate> {
     IBOutlet UITextField *txtPassportSeries;
     IBOutlet UITextField *txtPassportNumber;
 
@@ -59,9 +62,7 @@
     txtFirstName.enabled = editing;
     txtLastName.enabled = editing;
     txtMiddleName.enabled = editing;
-    txtState.enabled = editing;
-    txtCity.enabled = editing;
-    
+
     txtPassportSeries.enabled = editing;
     txtPassportNumber.enabled = editing;
     
@@ -276,6 +277,33 @@ if (![field isEqualToString:newValue]) { \
     printController.showsPageRange = NO;
     printController.printFormatter = printFormatter;
     [printController presentAnimated:YES completionHandler:nil];
+}
+
+#pragma mark Prepare for Segue
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"ShowStatesView"]) {
+        StatesViewController *statesViewController = segue.destinationViewController;
+        statesViewController.delegate = self;
+        statesViewController.state = txtState.text;
+    } else if ([segue.identifier isEqualToString:@"ShowCitiesView"]) {
+        CitiesViewController *citiesViewController = segue.destinationViewController;
+        citiesViewController.delegate = self;
+        citiesViewController.state = txtState.text;
+        citiesViewController.city = txtCity.text;
+    }
+}
+
+#pragma mark States View Controller Handler
+
+- (void)didSelectState:(NSString *)state {
+    txtState.text = state;
+}
+
+#pragma mark Cities View Controller Handler
+
+- (void)didSelectCity:(NSString *)city {
+    txtCity.text = city;
 }
 
 @end

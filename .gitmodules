@@ -4,3 +4,6 @@
 [submodule "UICKeyChainStore"]
 	path = UICKeyChainStore
 	url = git://github.com/kishikawakatsumi/UICKeyChainStore.git
+[submodule "JSONKit"]
+	path = JSONKit
+	url = git://github.com/johnezang/JSONKit.git
