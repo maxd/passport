@@ -220,6 +220,7 @@
 		09D8C6B2159B984C004B8583 /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
 		09D8C6B4159BB4C8004B8583 /* CitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitiesViewController.h; sourceTree = "<group>"; };
 		09D8C6B5159BB4C8004B8583 /* CitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitiesViewController.m; sourceTree = "<group>"; };
+		09DDB56215A36EB40073E506 /* NSLog+InAppPurchase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSLog+InAppPurchase.h"; sourceTree = "<group>"; };
 		9BEAEAF1586915E00144303 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -308,6 +309,7 @@
 				09966C0015A0F2CD00C5C7E0 /* ProductIdentifiers.h */,
 				09966C0215A0F91E00C5C7E0 /* AlertViewAlertHandler.h */,
 				09966C0315A0F91E00C5C7E0 /* AlertViewAlertHandler.m */,
+				09DDB56215A36EB40073E506 /* NSLog+InAppPurchase.h */,
 			);
 			name = InAppPurchase;
 			sourceTree = "<group>";
