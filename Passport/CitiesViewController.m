@@ -27,7 +27,8 @@
     NSData *statesFileContent = [NSData dataWithContentsOfFile:statesFilePath];
 
     NSArray *states = [statesFileContent objectFromJSONData];
-    NSDictionary *stateObj = [[states filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"title == %@", self.state]] objectAtIndex:0];
+    states = [states filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"title == %@", self.state]];
+    NSDictionary *stateObj = states.count != 0 ? [states objectAtIndex:0] : nil;
     NSNumber *stateId = [NSNumber numberWithInt:[[stateObj objectForKey:@"id"] intValue]];
 
     NSString *citiesFilePath = [[NSBundle mainBundle] pathForResource:@"cities" ofType:@"json"];
