@@ -27,8 +27,8 @@
 
     [[NSNotificationCenter defaultCenter]
             addObserver:self
-               selector:@selector(applicationDidBecomeActive:)
-                   name:UIApplicationDidBecomeActiveNotification
+               selector:@selector(applicationWillResignActive:)
+                   name:UIApplicationWillResignActiveNotification
                  object:nil];
 
     [[NSNotificationCenter defaultCenter]
@@ -73,7 +73,7 @@
 
 #pragma mark Handlers
 
-- (void)applicationDidBecomeActive:(id)sender {
+- (void)applicationWillResignActive:(id)sender {
     if (![SettingsRepository isValidPassword:nil] && !isInPurchase) {
         LoginViewController *loginViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"LoginView"];
         [self presentModalViewController:loginViewController animated:NO];
