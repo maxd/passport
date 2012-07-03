@@ -191,6 +191,7 @@
             case SKErrorUnknown:
                 NSLog(@"[InAppPurchase] %@ Unknown error: %@", productIdentifier, transaction.error);
                 [self.alertHandler showError:@"Неизвестная ошибка во время покупки. Обратитесь в службу поддержки приложения."];
+                [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
                 break;
             case SKErrorClientInvalid:       // client is not allowed to issue the request, etc.
                 NSLog(@"[InAppPurchase] %@ Client is not allowed to perform purchase request.", productIdentifier);
