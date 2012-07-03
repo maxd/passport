@@ -785,12 +785,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="Hwn-Oy-9WH">
-                            <rect key="frame" x="0.0" y="145" width="320" height="44"/>
+                            <rect key="frame" x="0.0" y="145" width="320" height="120"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0pL-Dz-CQH">
                                     <rect key="frame" x="10" y="1" width="300" height="43"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                     <state key="normal" title="Изменить пароль">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -801,6 +801,21 @@
                                     </state>
                                     <connections>
                                         <action selector="changePassword:" destination="jHr-y7-XnI" eventType="touchUpInside" id="ud9-Jq-ryk"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pBG-Oy-jpo">
+                                    <rect key="frame" x="10" y="70" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" title="Отключить рекламу">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="highlighted">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="disableAdHandler:" destination="jHr-y7-XnI" eventType="touchUpInside" id="SiR-C1-uJq"/>
                                     </connections>
                                 </button>
                             </subviews>
@@ -861,6 +876,7 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="btChangePassword" destination="0pL-Dz-CQH" id="lmr-n7-lYd"/>
+                        <outlet property="btDisableAd" destination="pBG-Oy-jpo" id="won-9t-99G"/>
                         <outlet property="txtConfirmPassword" destination="hTT-hc-2ta" id="KjU-wa-C7P"/>
                         <outlet property="txtPassword" destination="XaR-C3-jGj" id="5KJ-Et-JZq"/>
                     </connections>
@@ -971,6 +987,7 @@
             <relationships>
                 <relationship kind="action" name="changePassword:"/>
                 <relationship kind="outlet" name="btChangePassword" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btDisableAd" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="txtConfirmPassword" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="txtPassword" candidateClass="UITextField"/>
             </relationships>

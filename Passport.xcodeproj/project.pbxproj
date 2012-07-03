@@ -23,6 +23,16 @@
 		0993A429158C82DA009DB6E7 /* button_green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0993A427158C82DA009DB6E7 /* button_green@2x.png */; };
 		0993A42A158C82DA009DB6E7 /* button_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 0993A428158C82DA009DB6E7 /* button_green.png */; };
 		0993A42D158C854C009DB6E7 /* UIButton+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0993A42C158C854C009DB6E7 /* UIButton+Gradient.m */; };
+		09966BEA15A0882C00C5C7E0 /* button_red@2.png in Resources */ = {isa = PBXBuildFile; fileRef = 09966BE815A0882C00C5C7E0 /* button_red@2.png */; };
+		09966BEB15A0882C00C5C7E0 /* button_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 09966BE915A0882C00C5C7E0 /* button_red.png */; };
+		09966BEE15A088D100C5C7E0 /* button_gray@2.png in Resources */ = {isa = PBXBuildFile; fileRef = 09966BEC15A088D100C5C7E0 /* button_gray@2.png */; };
+		09966BEF15A088D100C5C7E0 /* button_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 09966BED15A088D100C5C7E0 /* button_gray.png */; };
+		09966BF315A08EE600C5C7E0 /* InAppPurchaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09966BF215A08EE600C5C7E0 /* InAppPurchaseManager.m */; };
+		09966BF515A08F4700C5C7E0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09966BF415A08F4700C5C7E0 /* StoreKit.framework */; };
+		09966BF815A0926400C5C7E0 /* SKProduct+LocalizedPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = 09966BF715A0926400C5C7E0 /* SKProduct+LocalizedPrice.m */; };
+		09966BFC15A0EDFF00C5C7E0 /* UserDefaultsProductActivator.m in Sources */ = {isa = PBXBuildFile; fileRef = 09966BFB15A0EDFF00C5C7E0 /* UserDefaultsProductActivator.m */; };
+		09966BFF15A0F02600C5C7E0 /* DisableAdProductActivator.m in Sources */ = {isa = PBXBuildFile; fileRef = 09966BFE15A0F02600C5C7E0 /* DisableAdProductActivator.m */; };
+		09966C0415A0F91E00C5C7E0 /* AlertViewAlertHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 09966C0315A0F91E00C5C7E0 /* AlertViewAlertHandler.m */; };
 		099FB28A15879C04009D4A05 /* e-mail.template in Resources */ = {isa = PBXBuildFile; fileRef = 099FB28915879C03009D4A05 /* e-mail.template */; };
 		099FB28D1587A09C009D4A05 /* TextComposer.m in Sources */ = {isa = PBXBuildFile; fileRef = 099FB28C1587A09C009D4A05 /* TextComposer.m */; };
 		09A18EA3159CF8B900EFE5AF /* CustomCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A18EA2159CF8B900EFE5AF /* CustomCityViewController.m */; };
@@ -109,6 +119,24 @@
 		0993A428158C82DA009DB6E7 /* button_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_green.png; sourceTree = "<group>"; };
 		0993A42B158C854C009DB6E7 /* UIButton+Gradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Gradient.h"; sourceTree = "<group>"; };
 		0993A42C158C854C009DB6E7 /* UIButton+Gradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Gradient.m"; sourceTree = "<group>"; };
+		09966BE815A0882C00C5C7E0 /* button_red@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_red@2.png"; sourceTree = "<group>"; };
+		09966BE915A0882C00C5C7E0 /* button_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_red.png; sourceTree = "<group>"; };
+		09966BEC15A088D100C5C7E0 /* button_gray@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_gray@2.png"; sourceTree = "<group>"; };
+		09966BED15A088D100C5C7E0 /* button_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_gray.png; sourceTree = "<group>"; };
+		09966BF115A08EE600C5C7E0 /* InAppPurchaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppPurchaseManager.h; sourceTree = "<group>"; };
+		09966BF215A08EE600C5C7E0 /* InAppPurchaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppPurchaseManager.m; sourceTree = "<group>"; };
+		09966BF415A08F4700C5C7E0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		09966BF615A0926400C5C7E0 /* SKProduct+LocalizedPrice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKProduct+LocalizedPrice.h"; sourceTree = "<group>"; };
+		09966BF715A0926400C5C7E0 /* SKProduct+LocalizedPrice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKProduct+LocalizedPrice.m"; sourceTree = "<group>"; };
+		09966BF915A0ED2600C5C7E0 /* ProductActivator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductActivator.h; sourceTree = "<group>"; };
+		09966BFA15A0EDFF00C5C7E0 /* UserDefaultsProductActivator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultsProductActivator.h; sourceTree = "<group>"; };
+		09966BFB15A0EDFF00C5C7E0 /* UserDefaultsProductActivator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultsProductActivator.m; sourceTree = "<group>"; };
+		09966BFD15A0F02600C5C7E0 /* DisableAdProductActivator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisableAdProductActivator.h; sourceTree = "<group>"; };
+		09966BFE15A0F02600C5C7E0 /* DisableAdProductActivator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisableAdProductActivator.m; sourceTree = "<group>"; };
+		09966C0015A0F2CD00C5C7E0 /* ProductIdentifiers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductIdentifiers.h; sourceTree = "<group>"; };
+		09966C0115A0F8AC00C5C7E0 /* InAppPurchaseAlertHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InAppPurchaseAlertHandler.h; sourceTree = "<group>"; };
+		09966C0215A0F91E00C5C7E0 /* AlertViewAlertHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewAlertHandler.h; sourceTree = "<group>"; };
+		09966C0315A0F91E00C5C7E0 /* AlertViewAlertHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewAlertHandler.m; sourceTree = "<group>"; };
 		099FB28915879C03009D4A05 /* e-mail.template */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; path = "e-mail.template"; sourceTree = "<group>"; usesTabs = 0; };
 		099FB28B1587A09B009D4A05 /* TextComposer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextComposer.h; sourceTree = "<group>"; };
 		099FB28C1587A09C009D4A05 /* TextComposer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextComposer.m; sourceTree = "<group>"; };
@@ -200,6 +228,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09966BF515A08F4700C5C7E0 /* StoreKit.framework in Frameworks */,
 				09591EDE159E24CF003000D5 /* SystemConfiguration.framework in Frameworks */,
 				09591EDC159E24C4003000D5 /* AudioToolbox.framework in Frameworks */,
 				09BEADEB158618D900144302 /* UIKit.framework in Frameworks */,
@@ -265,6 +294,24 @@
 			name = General;
 			sourceTree = "<group>";
 		};
+		09966BF015A08EC400C5C7E0 /* InAppPurchase */ = {
+			isa = PBXGroup;
+			children = (
+				09966BF115A08EE600C5C7E0 /* InAppPurchaseManager.h */,
+				09966BF215A08EE600C5C7E0 /* InAppPurchaseManager.m */,
+				09966C0115A0F8AC00C5C7E0 /* InAppPurchaseAlertHandler.h */,
+				09966BF915A0ED2600C5C7E0 /* ProductActivator.h */,
+				09966BFA15A0EDFF00C5C7E0 /* UserDefaultsProductActivator.h */,
+				09966BFB15A0EDFF00C5C7E0 /* UserDefaultsProductActivator.m */,
+				09966BFD15A0F02600C5C7E0 /* DisableAdProductActivator.h */,
+				09966BFE15A0F02600C5C7E0 /* DisableAdProductActivator.m */,
+				09966C0015A0F2CD00C5C7E0 /* ProductIdentifiers.h */,
+				09966C0215A0F91E00C5C7E0 /* AlertViewAlertHandler.h */,
+				09966C0315A0F91E00C5C7E0 /* AlertViewAlertHandler.m */,
+			);
+			name = InAppPurchase;
+			sourceTree = "<group>";
+		};
 		09BEADDB158618D900144302 = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +340,7 @@
 				09BEAEA11586905F00144302 /* UICKeyChainStore */,
 				09BEAE5C158676F600144302 /* ActionSheetPicker */,
 				097FFADE158CBFA900CDB220 /* FlurryAnalytics */,
+				09966BF415A08F4700C5C7E0 /* StoreKit.framework */,
 				09591EDD159E24CF003000D5 /* SystemConfiguration.framework */,
 				09591EDB159E24C4003000D5 /* AudioToolbox.framework */,
 				0927E2BC1587AB3300B3EA3B /* MessageUI.framework */,
@@ -317,6 +365,7 @@
 				09BEAE2615861ED500144302 /* Settings */,
 				09BEAE9C15868C7E00144302 /* DataAccess */,
 				09BEAE4815865BF800144302 /* Helpers */,
+				09966BF015A08EC400C5C7E0 /* InAppPurchase */,
 				09BEADF1158618D900144302 /* Supporting Files */,
 				09BEAE121586199D00144302 /* Resources */,
 			);
@@ -341,6 +390,10 @@
 				09D8C6B2159B984C004B8583 /* cities.json */,
 				0993A427158C82DA009DB6E7 /* button_green@2x.png */,
 				0993A428158C82DA009DB6E7 /* button_green.png */,
+				09966BE815A0882C00C5C7E0 /* button_red@2.png */,
+				09966BE915A0882C00C5C7E0 /* button_red.png */,
+				09966BEC15A088D100C5C7E0 /* button_gray@2.png */,
+				09966BED15A088D100C5C7E0 /* button_gray.png */,
 				09BEAE3715864DAD00144302 /* passport.png */,
 				09BEAE3815864DAD00144302 /* passport@2x.png */,
 				09BEAE3F15864E9600144302 /* scanner.png */,
@@ -420,6 +473,8 @@
 				0993A425158C7059009DB6E7 /* NSString+Hash.m */,
 				0993A42B158C854C009DB6E7 /* UIButton+Gradient.h */,
 				0993A42C158C854C009DB6E7 /* UIButton+Gradient.m */,
+				09966BF615A0926400C5C7E0 /* SKProduct+LocalizedPrice.h */,
+				09966BF715A0926400C5C7E0 /* SKProduct+LocalizedPrice.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -626,6 +681,10 @@
 				093E9B27158E02BE00ED054B /* passport-114x114.png in Resources */,
 				09D8C6B1159B9842004B8583 /* states.json in Resources */,
 				09D8C6B3159B984C004B8583 /* cities.json in Resources */,
+				09966BEA15A0882C00C5C7E0 /* button_red@2.png in Resources */,
+				09966BEB15A0882C00C5C7E0 /* button_red.png in Resources */,
+				09966BEE15A088D100C5C7E0 /* button_gray@2.png in Resources */,
+				09966BEF15A088D100C5C7E0 /* button_gray.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,6 +721,11 @@
 				09D8C6AE159B96BC004B8583 /* StatesViewController.m in Sources */,
 				09D8C6B6159BB4C8004B8583 /* CitiesViewController.m in Sources */,
 				09A18EA3159CF8B900EFE5AF /* CustomCityViewController.m in Sources */,
+				09966BF315A08EE600C5C7E0 /* InAppPurchaseManager.m in Sources */,
+				09966BF815A0926400C5C7E0 /* SKProduct+LocalizedPrice.m in Sources */,
+				09966BFC15A0EDFF00C5C7E0 /* UserDefaultsProductActivator.m in Sources */,
+				09966BFF15A0F02600C5C7E0 /* DisableAdProductActivator.m in Sources */,
+				09966C0415A0F91E00C5C7E0 /* AlertViewAlertHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -4,6 +4,8 @@
 #import "GADBannerView.h"
 #import "PassportRepository.h"
 #import "Passport.h"
+#import "ProductIdentifiers.h"
+#import "InAppPurchaseManager.h"
 
 #define ADMOB_TOKEN @"a14fede9eb5ac32"
 
@@ -12,6 +14,8 @@
     CGRect defaultContainerFrame;
 
     GADBannerView *ctlBanner;
+
+    BOOL isInPurchase;
 }
 
 @end
@@ -21,10 +25,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(applicationDidBecomeActive:)
-                                                 name:UIApplicationDidBecomeActiveNotification 
-                                               object:nil];
+    [[NSNotificationCenter defaultCenter]
+            addObserver:self
+               selector:@selector(applicationDidBecomeActive:)
+                   name:UIApplicationDidBecomeActiveNotification
+                 object:nil];
+
+    [[NSNotificationCenter defaultCenter]
+            addObserver:self
+               selector:@selector(changeAdBanner:)
+                   name:CHANGE_AD_BANNER_NOTIFICATION object:nil];
+
+    [[NSNotificationCenter defaultCenter]
+            addObserver:self
+               selector:@selector(inAppPurchaseStartedHandler:)
+                   name:IN_APP_PURCHASE_STARTED_NOTIFICATION
+                 object:nil];
+
+    [[NSNotificationCenter defaultCenter]
+            addObserver:self
+               selector:@selector(inAppPurchaseFinishedHandler:)
+                   name:IN_APP_PURCHASE_FINISHED_NOTIFICATION
+                 object:nil];
 
     container = [self findContainerView];
     defaultContainerFrame = container.frame;
@@ -32,9 +54,10 @@
     PassportRepository *passportRepository = [PassportRepository new];
     Passport *passport = [passportRepository get];
 
-    if (passport.passportSeries.length != 0 && passport.passportNumber.length != 0) {
-        [self initializeBanner];
-        [self showBanner];
+    if (![[[NSUserDefaults standardUserDefaults] objectForKey:DISABLE_AD_PRODUCT_IDENTIFIER] boolValue]) {
+        if (passport.passportSeries.length != 0 && passport.passportNumber.length != 0) {
+            [self showBanner];
+        }
     }
 }
 
@@ -51,10 +74,21 @@
 #pragma mark Handlers
 
 - (void)applicationDidBecomeActive:(id)sender {
-    if (![SettingsRepository isValidPassword:nil]) {
+    if (![SettingsRepository isValidPassword:nil] && !isInPurchase) {
         LoginViewController *loginViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"LoginView"];
         [self presentModalViewController:loginViewController animated:NO];
     }
+}
+
+- (void)inAppPurchaseStartedHandler:(NSNotification *)notification {
+    isInPurchase = YES;
+}
+
+- (void)inAppPurchaseFinishedHandler:(NSNotification *)notification {
+    // This hack don't show login window after complete or cancel purchase
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        isInPurchase = NO;
+    });
 }
 
 #pragma mark Show Banner
@@ -87,24 +121,40 @@
     return nil;
 }
 
-- (void) showBanner {
-    CGFloat containerHeight = defaultContainerFrame.size.height;
-    CGFloat containerWidth = defaultContainerFrame.size.width;
+- (void)showBanner {
+    if (!ctlBanner) {
+        [self initializeBanner];
 
-    CGFloat adBannerHeight = ctlBanner.frame.size.height;
+        CGFloat containerHeight = defaultContainerFrame.size.height;
+        CGFloat containerWidth = defaultContainerFrame.size.width;
 
-    container.frame = CGRectMake(0.0, 0.0, containerWidth, containerHeight - adBannerHeight);
-    ctlBanner.frame = CGRectMake(0.0, containerHeight - adBannerHeight, containerWidth, adBannerHeight);
+        CGFloat adBannerHeight = ctlBanner.frame.size.height;
 
-    [self.view addSubview:ctlBanner];
+        container.frame = CGRectMake(0.0, 0.0, containerWidth, containerHeight - adBannerHeight);
+        ctlBanner.frame = CGRectMake(0.0, containerHeight - adBannerHeight, containerWidth, adBannerHeight);
+
+        [self.view addSubview:ctlBanner];
+    }
 }
 
-- (void) hideBanner {
-    CGFloat containerHeight = defaultContainerFrame.size.height;
-    CGFloat containerWidth = defaultContainerFrame.size.width;
+- (void)hideBanner {
+    if (ctlBanner) {
+        CGFloat containerHeight = defaultContainerFrame.size.height;
+        CGFloat containerWidth = defaultContainerFrame.size.width;
 
-    container.frame = CGRectMake(0.0, 0.0, containerWidth, containerHeight);
-    [ctlBanner removeFromSuperview];
+        container.frame = CGRectMake(0.0, 0.0, containerWidth, containerHeight);
+        [ctlBanner removeFromSuperview];
+
+        ctlBanner = nil;
+    }
+}
+
+- (void)changeAdBanner:(NSNotification *)notification {
+    if ([[notification.userInfo objectForKey:@"visible"] boolValue]) {
+        [self showBanner];
+    } else {
+        [self hideBanner];
+    }
 }
 
 @end
