@@ -102,7 +102,7 @@
 
 - (void)request:(SKRequest *)request didFailWithError:(NSError *)error {
     NSLog(@"[InAppPurchase] - Can't update products from iTunesConnect: %@", error);
-    [self.alertHandler showError:@"Не удалось выполнить получение списка продуктов. Обратитесь в службу поддержки приложения."];
+    [self.alertHandler showError:[NSString stringWithFormat:@"Невозможно получить список продуктов. %@.", error.localizedDescription]];
 
     [[NSNotificationCenter defaultCenter]
             postNotificationName:IN_APP_PURCHASE_PRODUCTS_UPDATE_FAILED_NOTIFICATION
@@ -190,7 +190,7 @@
         switch (transaction.error.code) {
             case SKErrorUnknown:
                 NSLog(@"[InAppPurchase] %@ Unknown error: %@", productIdentifier, transaction.error);
-                [self.alertHandler showError:@"Неизвестная ошибка во время покупки. Обратитесь в службу поддержки приложения."];
+                [self.alertHandler showError:[NSString stringWithFormat:@"%@.", transaction.error.localizedDescription]];
                 [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
                 break;
             case SKErrorClientInvalid:       // client is not allowed to issue the request, etc.
