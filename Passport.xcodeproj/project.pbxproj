@@ -15,6 +15,7 @@
 		09591ED9159E2491003000D5 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09591ED0159E2491003000D5 /* libGoogleAdMobAds.a */; };
 		09591EDC159E24C4003000D5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09591EDB159E24C4003000D5 /* AudioToolbox.framework */; };
 		09591EDE159E24CF003000D5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09591EDD159E24CF003000D5 /* SystemConfiguration.framework */; };
+		0971F62715A4B1D8004933DD /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0971F62615A4B1D8004933DD /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		097FFAE1158CBFA900CDB220 /* libFlurryAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 097FFAE0158CBFA900CDB220 /* libFlurryAnalytics.a */; };
 		098CEB56158720A10047294E /* NSDate+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 098CEB55158720A10047294E /* NSDate+Formatter.m */; };
 		0991FA48158934880075A50F /* SettingsRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 0991FA47158934880075A50F /* SettingsRepository.m */; };
@@ -105,6 +106,8 @@
 		09591ED8159E2491003000D5 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		09591EDB159E24C4003000D5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		09591EDD159E24CF003000D5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0971F62515A4B1D8004933DD /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		0971F62615A4B1D8004933DD /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		097FFADF158CBFA900CDB220 /* FlurryAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAnalytics.h; sourceTree = "<group>"; };
 		097FFAE0158CBFA900CDB220 /* libFlurryAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurryAnalytics.a; sourceTree = "<group>"; };
 		098CEB54158720A10047294E /* NSDate+Formatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Formatter.h"; sourceTree = "<group>"; };
@@ -277,6 +280,15 @@
 			path = Mediation;
 			sourceTree = "<group>";
 		};
+		0971F62415A4B1D8004933DD /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				0971F62515A4B1D8004933DD /* Reachability.h */,
+				0971F62615A4B1D8004933DD /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
 		097FFADE158CBFA900CDB220 /* FlurryAnalytics */ = {
 			isa = PBXGroup;
 			children = (
@@ -342,6 +354,7 @@
 				09BEAEA11586905F00144302 /* UICKeyChainStore */,
 				09BEAE5C158676F600144302 /* ActionSheetPicker */,
 				097FFADE158CBFA900CDB220 /* FlurryAnalytics */,
+				0971F62415A4B1D8004933DD /* Reachability */,
 				09966BF415A08F4700C5C7E0 /* StoreKit.framework */,
 				09591EDD159E24CF003000D5 /* SystemConfiguration.framework */,
 				09591EDB159E24C4003000D5 /* AudioToolbox.framework */,
@@ -728,6 +741,7 @@
 				09966BFC15A0EDFF00C5C7E0 /* UserDefaultsProductActivator.m in Sources */,
 				09966BFF15A0F02600C5C7E0 /* DisableAdProductActivator.m in Sources */,
 				09966C0415A0F91E00C5C7E0 /* AlertViewAlertHandler.m in Sources */,
+				0971F62715A4B1D8004933DD /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

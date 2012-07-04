@@ -6,6 +6,7 @@
 #import "Passport.h"
 #import "ProductIdentifiers.h"
 #import "InAppPurchaseManager.h"
+#import "Reachability.h"
 
 #define ADMOB_TOKEN @"a14fede9eb5ac32"
 
@@ -55,8 +56,10 @@
     Passport *passport = [passportRepository get];
 
     if (![[[NSUserDefaults standardUserDefaults] objectForKey:DISABLE_AD_PRODUCT_IDENTIFIER] boolValue]) {
-        if (passport.passportSeries.length != 0 && passport.passportNumber.length != 0) {
-            [self showBanner];
+        if([Reachability reachabilityForInternetConnection].currentReachabilityStatus != NotReachable) {
+            if (passport.passportSeries.length != 0 && passport.passportNumber.length != 0) {
+                [self showBanner];
+            }
         }
     }
 }
