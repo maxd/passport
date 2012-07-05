@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-#import "UserDefaultsProductActivator.h"
+#import <InAppPurchase/InAppPurchase.h>
 
 @interface DisableAdProductActivator : UserDefaultsProductActivator
 

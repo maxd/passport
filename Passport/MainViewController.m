@@ -5,7 +5,7 @@
 #import "PassportRepository.h"
 #import "Passport.h"
 #import "ProductIdentifiers.h"
-#import "InAppPurchaseManager.h"
+#import <InAppPurchase/InAppPurchase.h>
 #import "Reachability.h"
 
 #define ADMOB_TOKEN @"a14fede9eb5ac32"

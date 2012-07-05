@@ -1,8 +1,7 @@
 #import "SettingsViewController.h"
 #import "SettingsRepository.h"
 #import "UIButton+Gradient.h"
-#import "InAppPurchaseManager.h"
-#import "SKProduct+LocalizedPrice.h"
+#import <InAppPurchase/InAppPurchase.h>
 #import "MainViewController.h"
 #import "ProductIdentifiers.h"
 #import "DisableAdProductActivator.h"

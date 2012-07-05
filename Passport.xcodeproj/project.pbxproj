@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0927E2BD1587AB3300B3EA3B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0927E2BC1587AB3300B3EA3B /* MessageUI.framework */; };
 		0927E2C01587B0BE00B3EA3B /* GenderFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0927E2BF1587B0BE00B3EA3B /* GenderFormatter.m */; };
+		093E1C6315A61D9900D5538A /* InAppPurchase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093E1C6215A61D9900D5538A /* InAppPurchase.framework */; };
 		093E9B25158E02BA00ED054B /* passport-57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 093E9B24158E02BA00ED054B /* passport-57x57.png */; };
 		093E9B27158E02BE00ED054B /* passport-114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 093E9B26158E02BE00ED054B /* passport-114x114.png */; };
 		0944213F158CF72000FFDA71 /* print.template in Resources */ = {isa = PBXBuildFile; fileRef = 0944213E158CF72000FFDA71 /* print.template */; };
@@ -28,12 +29,8 @@
 		09966BEB15A0882C00C5C7E0 /* button_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 09966BE915A0882C00C5C7E0 /* button_red.png */; };
 		09966BEE15A088D100C5C7E0 /* button_gray@2.png in Resources */ = {isa = PBXBuildFile; fileRef = 09966BEC15A088D100C5C7E0 /* button_gray@2.png */; };
 		09966BEF15A088D100C5C7E0 /* button_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 09966BED15A088D100C5C7E0 /* button_gray.png */; };
-		09966BF315A08EE600C5C7E0 /* InAppPurchaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09966BF215A08EE600C5C7E0 /* InAppPurchaseManager.m */; };
 		09966BF515A08F4700C5C7E0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09966BF415A08F4700C5C7E0 /* StoreKit.framework */; };
-		09966BF815A0926400C5C7E0 /* SKProduct+LocalizedPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = 09966BF715A0926400C5C7E0 /* SKProduct+LocalizedPrice.m */; };
-		09966BFC15A0EDFF00C5C7E0 /* UserDefaultsProductActivator.m in Sources */ = {isa = PBXBuildFile; fileRef = 09966BFB15A0EDFF00C5C7E0 /* UserDefaultsProductActivator.m */; };
 		09966BFF15A0F02600C5C7E0 /* DisableAdProductActivator.m in Sources */ = {isa = PBXBuildFile; fileRef = 09966BFE15A0F02600C5C7E0 /* DisableAdProductActivator.m */; };
-		09966C0415A0F91E00C5C7E0 /* AlertViewAlertHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 09966C0315A0F91E00C5C7E0 /* AlertViewAlertHandler.m */; };
 		099FB28A15879C04009D4A05 /* e-mail.template in Resources */ = {isa = PBXBuildFile; fileRef = 099FB28915879C03009D4A05 /* e-mail.template */; };
 		099FB28D1587A09C009D4A05 /* TextComposer.m in Sources */ = {isa = PBXBuildFile; fileRef = 099FB28C1587A09C009D4A05 /* TextComposer.m */; };
 		09A18EA3159CF8B900EFE5AF /* CustomCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A18EA2159CF8B900EFE5AF /* CustomCityViewController.m */; };
@@ -84,6 +81,7 @@
 		0927E2BC1587AB3300B3EA3B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		0927E2BE1587B0BE00B3EA3B /* GenderFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenderFormatter.h; sourceTree = "<group>"; };
 		0927E2BF1587B0BE00B3EA3B /* GenderFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenderFormatter.m; sourceTree = "<group>"; };
+		093E1C6215A61D9900D5538A /* InAppPurchase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InAppPurchase.framework; sourceTree = "<group>"; };
 		093E9B24158E02BA00ED054B /* passport-57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "passport-57x57.png"; sourceTree = "<group>"; };
 		093E9B26158E02BE00ED054B /* passport-114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "passport-114x114.png"; sourceTree = "<group>"; };
 		0944213E158CF72000FFDA71 /* print.template */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; path = print.template; sourceTree = "<group>"; };
@@ -126,20 +124,10 @@
 		09966BE915A0882C00C5C7E0 /* button_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_red.png; sourceTree = "<group>"; };
 		09966BEC15A088D100C5C7E0 /* button_gray@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_gray@2.png"; sourceTree = "<group>"; };
 		09966BED15A088D100C5C7E0 /* button_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_gray.png; sourceTree = "<group>"; };
-		09966BF115A08EE600C5C7E0 /* InAppPurchaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppPurchaseManager.h; sourceTree = "<group>"; };
-		09966BF215A08EE600C5C7E0 /* InAppPurchaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppPurchaseManager.m; sourceTree = "<group>"; };
 		09966BF415A08F4700C5C7E0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		09966BF615A0926400C5C7E0 /* SKProduct+LocalizedPrice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKProduct+LocalizedPrice.h"; sourceTree = "<group>"; };
-		09966BF715A0926400C5C7E0 /* SKProduct+LocalizedPrice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKProduct+LocalizedPrice.m"; sourceTree = "<group>"; };
-		09966BF915A0ED2600C5C7E0 /* ProductActivator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductActivator.h; sourceTree = "<group>"; };
-		09966BFA15A0EDFF00C5C7E0 /* UserDefaultsProductActivator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultsProductActivator.h; sourceTree = "<group>"; };
-		09966BFB15A0EDFF00C5C7E0 /* UserDefaultsProductActivator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultsProductActivator.m; sourceTree = "<group>"; };
 		09966BFD15A0F02600C5C7E0 /* DisableAdProductActivator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisableAdProductActivator.h; sourceTree = "<group>"; };
 		09966BFE15A0F02600C5C7E0 /* DisableAdProductActivator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisableAdProductActivator.m; sourceTree = "<group>"; };
 		09966C0015A0F2CD00C5C7E0 /* ProductIdentifiers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductIdentifiers.h; sourceTree = "<group>"; };
-		09966C0115A0F8AC00C5C7E0 /* InAppPurchaseAlertHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InAppPurchaseAlertHandler.h; sourceTree = "<group>"; };
-		09966C0215A0F91E00C5C7E0 /* AlertViewAlertHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewAlertHandler.h; sourceTree = "<group>"; };
-		09966C0315A0F91E00C5C7E0 /* AlertViewAlertHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewAlertHandler.m; sourceTree = "<group>"; };
 		099FB28915879C03009D4A05 /* e-mail.template */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; path = "e-mail.template"; sourceTree = "<group>"; usesTabs = 0; };
 		099FB28B1587A09B009D4A05 /* TextComposer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextComposer.h; sourceTree = "<group>"; };
 		099FB28C1587A09C009D4A05 /* TextComposer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextComposer.m; sourceTree = "<group>"; };
@@ -223,7 +211,6 @@
 		09D8C6B2159B984C004B8583 /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
 		09D8C6B4159BB4C8004B8583 /* CitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitiesViewController.h; sourceTree = "<group>"; };
 		09D8C6B5159BB4C8004B8583 /* CitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitiesViewController.m; sourceTree = "<group>"; };
-		09DDB56215A36EB40073E506 /* NSLog+InAppPurchase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSLog+InAppPurchase.h"; sourceTree = "<group>"; };
 		9BEAEAF1586915E00144303 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -242,6 +229,7 @@
 				09BEADEF158618D900144302 /* CoreGraphics.framework in Frameworks */,
 				097FFAE1158CBFA900CDB220 /* libFlurryAnalytics.a in Frameworks */,
 				09591ED9159E2491003000D5 /* libGoogleAdMobAds.a in Frameworks */,
+				093E1C6315A61D9900D5538A /* InAppPurchase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,18 +298,9 @@
 		09966BF015A08EC400C5C7E0 /* InAppPurchase */ = {
 			isa = PBXGroup;
 			children = (
-				09966BF115A08EE600C5C7E0 /* InAppPurchaseManager.h */,
-				09966BF215A08EE600C5C7E0 /* InAppPurchaseManager.m */,
-				09966C0115A0F8AC00C5C7E0 /* InAppPurchaseAlertHandler.h */,
-				09966BF915A0ED2600C5C7E0 /* ProductActivator.h */,
-				09966BFA15A0EDFF00C5C7E0 /* UserDefaultsProductActivator.h */,
-				09966BFB15A0EDFF00C5C7E0 /* UserDefaultsProductActivator.m */,
 				09966BFD15A0F02600C5C7E0 /* DisableAdProductActivator.h */,
 				09966BFE15A0F02600C5C7E0 /* DisableAdProductActivator.m */,
 				09966C0015A0F2CD00C5C7E0 /* ProductIdentifiers.h */,
-				09966C0215A0F91E00C5C7E0 /* AlertViewAlertHandler.h */,
-				09966C0315A0F91E00C5C7E0 /* AlertViewAlertHandler.m */,
-				09DDB56215A36EB40073E506 /* NSLog+InAppPurchase.h */,
 			);
 			name = InAppPurchase;
 			sourceTree = "<group>";
@@ -363,6 +342,7 @@
 				09BEADEA158618D900144302 /* UIKit.framework */,
 				09BEADEC158618D900144302 /* Foundation.framework */,
 				09BEADEE158618D900144302 /* CoreGraphics.framework */,
+				093E1C6215A61D9900D5538A /* InAppPurchase.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -488,8 +468,6 @@
 				0993A425158C7059009DB6E7 /* NSString+Hash.m */,
 				0993A42B158C854C009DB6E7 /* UIButton+Gradient.h */,
 				0993A42C158C854C009DB6E7 /* UIButton+Gradient.m */,
-				09966BF615A0926400C5C7E0 /* SKProduct+LocalizedPrice.h */,
-				09966BF715A0926400C5C7E0 /* SKProduct+LocalizedPrice.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -736,11 +714,7 @@
 				09D8C6AE159B96BC004B8583 /* StatesViewController.m in Sources */,
 				09D8C6B6159BB4C8004B8583 /* CitiesViewController.m in Sources */,
 				09A18EA3159CF8B900EFE5AF /* CustomCityViewController.m in Sources */,
-				09966BF315A08EE600C5C7E0 /* InAppPurchaseManager.m in Sources */,
-				09966BF815A0926400C5C7E0 /* SKProduct+LocalizedPrice.m in Sources */,
-				09966BFC15A0EDFF00C5C7E0 /* UserDefaultsProductActivator.m in Sources */,
 				09966BFF15A0F02600C5C7E0 /* DisableAdProductActivator.m in Sources */,
-				09966C0415A0F91E00C5C7E0 /* AlertViewAlertHandler.m in Sources */,
 				0971F62715A4B1D8004933DD /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -774,6 +748,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Passport/Passport.entitlements;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Passport/Passport-Prefix.pch";
 				INFOPLIST_FILE = "Passport/Passport-Info.plist";
@@ -782,6 +760,7 @@
 					"\"$(SRCROOT)/FlurryAnalytics\"",
 					"\"$(SRCROOT)/GoogleAdMobAdsSDK\"",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = passport;
 				WRAPPER_EXTENSION = app;
 			};
@@ -839,6 +818,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Passport/Passport.entitlements;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Passport/Passport-Prefix.pch";
 				INFOPLIST_FILE = "Passport/Passport-Info.plist";
@@ -847,6 +830,7 @@
 					"\"$(SRCROOT)/FlurryAnalytics\"",
 					"\"$(SRCROOT)/GoogleAdMobAdsSDK\"",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = passport;
 				WRAPPER_EXTENSION = app;
 			};
@@ -856,6 +840,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Passport/Passport.entitlements;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Passport/Passport-Prefix.pch";
 				INFOPLIST_FILE = "Passport/Passport-Info.plist";
@@ -864,6 +852,7 @@
 					"\"$(SRCROOT)/FlurryAnalytics\"",
 					"\"$(SRCROOT)/GoogleAdMobAdsSDK\"",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = passport;
 				WRAPPER_EXTENSION = app;
 			};
