@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		0927E2BD1587AB3300B3EA3B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0927E2BC1587AB3300B3EA3B /* MessageUI.framework */; };
 		0927E2C01587B0BE00B3EA3B /* GenderFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0927E2BF1587B0BE00B3EA3B /* GenderFormatter.m */; };
-		093E1C6315A61D9900D5538A /* InAppPurchase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093E1C6215A61D9900D5538A /* InAppPurchase.framework */; };
 		093E9B25158E02BA00ED054B /* passport-57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 093E9B24158E02BA00ED054B /* passport-57x57.png */; };
 		093E9B27158E02BE00ED054B /* passport-114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 093E9B26158E02BE00ED054B /* passport-114x114.png */; };
 		0944213F158CF72000FFDA71 /* print.template in Resources */ = {isa = PBXBuildFile; fileRef = 0944213E158CF72000FFDA71 /* print.template */; };
+		0953E0AB15A7753F003716A6 /* InAppPurchase.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0953E0A915A7753F003716A6 /* InAppPurchase.bundle */; };
+		0953E0AC15A7753F003716A6 /* InAppPurchase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0953E0AA15A7753F003716A6 /* InAppPurchase.framework */; };
 		09591ED9159E2491003000D5 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09591ED0159E2491003000D5 /* libGoogleAdMobAds.a */; };
 		09591EDC159E24C4003000D5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09591EDB159E24C4003000D5 /* AudioToolbox.framework */; };
 		09591EDE159E24CF003000D5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09591EDD159E24CF003000D5 /* SystemConfiguration.framework */; };
@@ -81,10 +82,11 @@
 		0927E2BC1587AB3300B3EA3B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		0927E2BE1587B0BE00B3EA3B /* GenderFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenderFormatter.h; sourceTree = "<group>"; };
 		0927E2BF1587B0BE00B3EA3B /* GenderFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenderFormatter.m; sourceTree = "<group>"; };
-		093E1C6215A61D9900D5538A /* InAppPurchase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InAppPurchase.framework; sourceTree = "<group>"; };
 		093E9B24158E02BA00ED054B /* passport-57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "passport-57x57.png"; sourceTree = "<group>"; };
 		093E9B26158E02BE00ED054B /* passport-114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "passport-114x114.png"; sourceTree = "<group>"; };
 		0944213E158CF72000FFDA71 /* print.template */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; path = print.template; sourceTree = "<group>"; };
+		0953E0A915A7753F003716A6 /* InAppPurchase.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = InAppPurchase.bundle; sourceTree = "<group>"; };
+		0953E0AA15A7753F003716A6 /* InAppPurchase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InAppPurchase.framework; sourceTree = "<group>"; };
 		09591EC7159E2491003000D5 /* GADAdMobExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdMobExtras.h; sourceTree = "<group>"; };
 		09591EC8159E2491003000D5 /* GADAdNetworkExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdNetworkExtras.h; sourceTree = "<group>"; };
 		09591EC9159E2491003000D5 /* GADAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdSize.h; sourceTree = "<group>"; };
@@ -229,7 +231,7 @@
 				09BEADEF158618D900144302 /* CoreGraphics.framework in Frameworks */,
 				097FFAE1158CBFA900CDB220 /* libFlurryAnalytics.a in Frameworks */,
 				09591ED9159E2491003000D5 /* libGoogleAdMobAds.a in Frameworks */,
-				093E1C6315A61D9900D5538A /* InAppPurchase.framework in Frameworks */,
+				0953E0AC15A7753F003716A6 /* InAppPurchase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,7 +344,8 @@
 				09BEADEA158618D900144302 /* UIKit.framework */,
 				09BEADEC158618D900144302 /* Foundation.framework */,
 				09BEADEE158618D900144302 /* CoreGraphics.framework */,
-				093E1C6215A61D9900D5538A /* InAppPurchase.framework */,
+				0953E0A915A7753F003716A6 /* InAppPurchase.bundle */,
+				0953E0AA15A7753F003716A6 /* InAppPurchase.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -678,6 +681,7 @@
 				09966BEB15A0882C00C5C7E0 /* button_red.png in Resources */,
 				09966BEE15A088D100C5C7E0 /* button_gray@2.png in Resources */,
 				09966BEF15A088D100C5C7E0 /* button_gray.png in Resources */,
+				0953E0AB15A7753F003716A6 /* InAppPurchase.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
