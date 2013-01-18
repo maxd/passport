@@ -7,7 +7,7 @@
 #import "TextComposer.h"
 #import "GenderFormatter.h"
 #import "SettingsRepository.h"
-#import "FlurryAnalytics.h"
+#import "Flurry.h"
 #import "StatesViewController.h"
 #import "CitiesViewController.h"
 
@@ -73,7 +73,7 @@
         passport = [passportRepository get];
         [self showPassportData];
         
-        [FlurryAnalytics logEvent:@"START_EDIT_PASSPORT"];
+        [Flurry logEvent:@"START_EDIT_PASSPORT"];
     } else {
         [self fillPassport];
         [passportRepository save:passport];
@@ -152,7 +152,7 @@
 
         txtGender.text = [GenderFormatter genderToDescription:passport.gender];
 
-        [FlurryAnalytics logEvent:@"FILL_FIELD_GENDER"];
+        [Flurry logEvent:@"FILL_FIELD_GENDER"];
     }
 }
 
@@ -162,7 +162,7 @@
 
         txtBirthDay.text = [date toLongDate];
 
-        [FlurryAnalytics logEvent:@"FILL_FIELD_BIRTH_DAY"];
+        [Flurry logEvent:@"FILL_FIELD_BIRTH_DAY"];
     }
 }
 
@@ -172,7 +172,7 @@
 
         txtDateOfReceipt.text = [date toLongDate];
 
-        [FlurryAnalytics logEvent:@"FILL_FIELD_DATE_OF_RECEIPT"];
+        [Flurry logEvent:@"FILL_FIELD_DATE_OF_RECEIPT"];
     }
 }
 
@@ -198,7 +198,7 @@
 #define FILL_FIELD(field, newValue, eventName) \
 if (![field isEqualToString:newValue]) { \
     field = newValue; \
-    [FlurryAnalytics logEvent:[NSString stringWithFormat:@"FILL_FIELD_%@", eventName]]; \
+    [Flurry logEvent:[NSString stringWithFormat:@"FILL_FIELD_%@", eventName]]; \
 }
 
 - (void)fillPassport {
@@ -240,7 +240,7 @@ if (![field isEqualToString:newValue]) { \
 }
 
 - (void)sendMail {
-    [FlurryAnalytics logEvent:@"SEND_MAIL_PASSPORT_DATA"];
+    [Flurry logEvent:@"SEND_MAIL_PASSPORT_DATA"];
 
     TextComposer *textComposer = [TextComposer new];
     NSString *subject = [textComposer composeMailSubject:passport];
@@ -259,7 +259,7 @@ if (![field isEqualToString:newValue]) { \
 }
 
 - (void)print {
-    [FlurryAnalytics logEvent:@"PRINT_PASSPORT_DATA"];
+    [Flurry logEvent:@"PRINT_PASSPORT_DATA"];
 
     TextComposer *textComposer = [TextComposer new];
 

@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
-        <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
         <!--Table View Controller - Сканы паспорта-->
         <scene sceneID="MTE-7m-p94">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NBy-ve-P5O" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="aG8-HM-PIw" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="zeU-bI-cfK">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
@@ -48,13 +46,13 @@
                         <segue destination="xfY-pR-Fug" kind="modal" identifier="ScanView" id="MuG-22-AJi"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NBy-ve-P5O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1689" y="180"/>
         </scene>
         <!--Navigation Controller - Сканы паспорта-->
         <scene sceneID="Wqe-am-0DR">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UfX-Jz-OfY" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController definesPresentationContext="YES" id="ooO-VZ-nkh" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Сканы паспорта" image="scanner.png" id="0nH-0D-HAS"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -65,13 +63,13 @@
                         <segue destination="aG8-HM-PIw" kind="relationship" relationship="rootViewController" id="jCL-SV-UmN"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UfX-Jz-OfY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1193" y="180"/>
         </scene>
         <!--Passport View Controller - Паспорт-->
         <scene sceneID="HJO-2e-Xoh">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oRq-A2-K4d" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController storyboardIdentifier="" id="hSq-hQ-gf5" customClass="PassportViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" allowsSelection="NO" allowsSelectionDuringEditing="YES" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="jyj-zx-Cz5">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
@@ -369,13 +367,13 @@
                         <segue destination="wi0-Kw-buP" kind="modal" identifier="ShowPasswordView" id="ke5-V9-ZUA"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oRq-A2-K4d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1163" y="-451"/>
         </scene>
         <!--Cities View Controller - Города-->
         <scene sceneID="V05-hl-Bet">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="a6H-76-4tb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController title="Города" id="VB6-yi-7f0" customClass="CitiesViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="xBM-rf-tju">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
@@ -429,13 +427,13 @@
                         <segue destination="0TB-ck-phN" kind="push" identifier="ShowCustomCityView" id="Vhn-5Q-XJG"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a6H-76-4tb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1642" y="-1730"/>
         </scene>
         <!--Custom City View Controller - Введите город-->
         <scene sceneID="qXV-4p-hqV">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ICL-Ml-ieM" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController storyboardIdentifier="CustomCity" title="Введите город" id="0TB-ck-phN" customClass="CustomCityViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="XfN-BK-UFf">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
@@ -502,13 +500,13 @@
                         <outlet property="txtCustomCity" destination="lHK-sa-d0U" id="O0t-NE-Wi2"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ICL-Ml-ieM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2168" y="-1730"/>
         </scene>
         <!--States View Controller - Области-->
         <scene sceneID="tc5-bY-jyb">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AdO-wT-gpW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController title="Области" id="gvb-7f-w5T" customClass="StatesViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="yNl-O6-Tn5">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
@@ -565,13 +563,13 @@
                         <outlet property="lblEmptyTable" destination="7vW-fZ-Bfi" id="kWg-FG-gO0"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AdO-wT-gpW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1642" y="-1101"/>
         </scene>
         <!--Password View Controller-->
         <scene sceneID="dRv-oA-5Dx">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ETC-WE-clF" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController storyboardIdentifier="PasswordView" id="wi0-Kw-buP" customClass="PasswordViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="JGn-9X-wcZ">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
@@ -669,13 +667,13 @@
                         <outlet property="txtPassword" destination="BS3-kV-LmI" id="uS5-Z9-LnZ"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ETC-WE-clF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1642" y="-451"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="jt0-eY-GsD">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8dM-df-dEh" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController storyboardIdentifier="LoginView" id="dfB-B2-hWD" customClass="LoginViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="YsA-1B-syj">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
@@ -754,13 +752,13 @@
                         <outlet property="txtPassword" destination="9aL-mN-DZs" id="qa6-et-Jb2"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8dM-df-dEh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="127" y="-451"/>
         </scene>
         <!--Navigation Controller - Паспорт-->
         <scene sceneID="C3Z-Dd-THQ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Q0O-lw-kfN" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController definesPresentationContext="YES" id="CPV-HE-KCb" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Паспорт" image="passport.png" id="JND-ZW-P60"/>
                     <navigationItem key="navigationItem" id="xRZ-yQ-PJo"/>
@@ -772,20 +770,20 @@
                         <segue destination="hSq-hQ-gf5" kind="relationship" relationship="rootViewController" id="OSU-UF-IUU"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q0O-lw-kfN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="667" y="-451"/>
         </scene>
         <!--Settings View Controller - Настройки-->
         <scene sceneID="BDB-x6-lLO">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hxT-qX-xVz" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="jHr-y7-XnI" customClass="SettingsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="SQi-Gh-gA2">
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="Hwn-Oy-9WH">
-                            <rect key="frame" x="0.0" y="145" width="320" height="120"/>
+                            <rect key="frame" x="0.0" y="145" width="320" height="180"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0pL-Dz-CQH">
@@ -816,6 +814,21 @@
                                     </state>
                                     <connections>
                                         <action selector="disableAdHandler:" destination="jHr-y7-XnI" eventType="touchUpInside" id="SiR-C1-uJq"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8fM-3p-OBn">
+                                    <rect key="frame" x="10" y="120" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" title="Восстановить покупки">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="highlighted">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="restorePurchasesHandler:" destination="jHr-y7-XnI" eventType="touchUpInside" id="nBq-ch-Mei"/>
                                     </connections>
                                 </button>
                             </subviews>
@@ -877,17 +890,18 @@
                     <connections>
                         <outlet property="btChangePassword" destination="0pL-Dz-CQH" id="lmr-n7-lYd"/>
                         <outlet property="btDisableAd" destination="pBG-Oy-jpo" id="won-9t-99G"/>
+                        <outlet property="btRestorePurchases" destination="8fM-3p-OBn" id="c2s-OL-R7C"/>
                         <outlet property="txtConfirmPassword" destination="hTT-hc-2ta" id="KjU-wa-C7P"/>
                         <outlet property="txtPassword" destination="XaR-C3-jGj" id="5KJ-Et-JZq"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hxT-qX-xVz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="667" y="815"/>
         </scene>
         <!--Scans View Controller-->
         <scene sceneID="Nm9-q1-IEH">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pZQ-Yo-OeV" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="xfY-pR-Fug" customClass="ScansViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jmg-7I-Gp8">
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
@@ -897,13 +911,13 @@
                     <navigationItem key="navigationItem" id="Rso-M5-uiN"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pZQ-Yo-OeV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2168" y="180"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="15">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
                 <tabBarController storyboardIdentifier="MainView" id="4" customClass="MainViewController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="AKv-YI-OZc"/>
                     <nil key="simulatedBottomBarMetrics"/>
@@ -918,6 +932,7 @@
                         <segue destination="dfB-B2-hWD" kind="modal" identifier="ShowLoginView" id="NNG-Wf-S0H"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="127" y="180"/>
         </scene>
@@ -927,79 +942,6 @@
         <image name="scanner.png" width="24" height="24"/>
         <image name="settings.png" width="24" height="24"/>
     </resources>
-    <classes>
-        <class className="CitiesViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CitiesViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="ctlSearchBar" candidateClass="UISearchBar"/>
-                <relationship kind="outlet" name="lblEmptyTable" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="CustomCityViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomCityViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="btConfirm" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="txtCustomCity" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="LoginViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="login:"/>
-                <relationship kind="outlet" name="btLogin" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="txtPassword" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="MainViewController" superclassName="UITabBarController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainViewController.h"/>
-        </class>
-        <class className="PassportViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PassportViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="txtBirthDay" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="txtCity" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="txtDateOfReceipt" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="txtFirstName" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="txtGender" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="txtLastName" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="txtMiddleName" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="txtPassportNumber" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="txtPassportSeries" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="txtPlaceOfReceipt" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="txtState" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="txtSubdivisionCode" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="PasswordViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PasswordViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="confirmPassword:"/>
-                <relationship kind="outlet" name="btConfirmPassword" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="txtConfirmPassword" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="txtPassword" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="ScansViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ScansViewController.h"/>
-        </class>
-        <class className="SettingsViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="changePassword:"/>
-                <relationship kind="outlet" name="btChangePassword" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="btDisableAd" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="txtConfirmPassword" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="txtPassword" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="StatesViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/StatesViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="ctlSearchBar" candidateClass="UISearchBar"/>
-                <relationship kind="outlet" name="lblEmptyTable" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

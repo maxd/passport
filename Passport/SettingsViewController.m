@@ -13,6 +13,7 @@
     IBOutlet UITextField *txtConfirmPassword;
     IBOutlet UIButton *btChangePassword;
     IBOutlet UIButton *btDisableAd;
+    IBOutlet UIButton *btRestorePurchases;
 
     InAppPurchaseManager *inAppPurchaseManager;
 }
@@ -50,10 +51,12 @@
 
     [btChangePassword greenGradient];
     [btDisableAd redGradient];
+    [btRestorePurchases greenGradient];
 
     BOOL isAdDisabled = [[[NSUserDefaults standardUserDefaults] objectForKey:DISABLE_AD_PRODUCT_IDENTIFIER] boolValue];
     btDisableAd.enabled = NO;
     btDisableAd.hidden = isAdDisabled;
+    btRestorePurchases.hidden = isAdDisabled;
 
     if (!isAdDisabled) {
         inAppPurchaseManager = [InAppPurchaseManager new];
@@ -149,12 +152,28 @@
     }
 }
 
+- (IBAction)restorePurchasesHandler:(id)sender {
+    if (inAppPurchaseManager.canMakePurchases) {
+        [inAppPurchaseManager restorePurchases];
+    } else {
+        UIAlertView *alertView = [[UIAlertView alloc]
+                initWithTitle:@"Предупреждение"
+                      message:@"Возможность совершения покупок запрещена на этом устройстве."
+                     delegate:nil
+            cancelButtonTitle:@"Закрыть"
+            otherButtonTitles:nil];
+        [alertView show];
+    }
+}
+
 - (void)inAppPurchaseStartedHandler:(NSNotification *)notification {
     btDisableAd.enabled = NO;
+    btRestorePurchases.enabled = NO;
 }
 
 - (void)inAppPurchaseFinishedHandler:(NSNotification *)notification {
     btDisableAd.enabled = YES;
+    btRestorePurchases.enabled = YES;
 }
 
 - (void)productsUpdateSuccessHandler:(id)sender {
@@ -168,7 +187,10 @@
 }
 
 - (void)changeAdBanner:(NSNotification *)notification {
-    btDisableAd.hidden = ![[notification.userInfo objectForKey:@"visible"] boolValue];
+    BOOL hideInAppButtons = ![[notification.userInfo objectForKey:@"visible"] boolValue];
+
+    btDisableAd.hidden = hideInAppButtons;
+    btRestorePurchases.hidden = hideInAppButtons;
 }
 
 @end
