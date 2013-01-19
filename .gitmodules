@@ -1,12 +1,12 @@
-[submodule "ActionSheetPicker"]
-	path = ActionSheetPicker
-	url = git://github.com/TimCinel/ActionSheetPicker.git
-[submodule "UICKeyChainStore"]
-	path = UICKeyChainStore
-	url = git://github.com/kishikawakatsumi/UICKeyChainStore.git
-[submodule "JSONKit"]
-	path = JSONKit
-	url = git://github.com/johnezang/JSONKit.git
 [submodule "Vendor/InAppPurchase"]
 	path = Vendor/InAppPurchase
 	url = git@github.com:maxd/InAppPurchase.git
+[submodule "Vendor/ActionSheetPicker"]
+	path = Vendor/ActionSheetPicker
+	url = git://github.com/TimCinel/ActionSheetPicker.git
+[submodule "Vendor/UICKeyChainStore"]
+	path = Vendor/UICKeyChainStore
+	url = git://github.com/kishikawakatsumi/UICKeyChainStore.git
+[submodule "Vendor/JSONKit"]
+	path = Vendor/JSONKit
+	url = git://github.com/johnezang/JSONKit.git

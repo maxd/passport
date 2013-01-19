@@ -18,7 +18,6 @@
 		0948FB8716A867FF00A1A4CE /* libInAppPurchase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0948FB8216A8671100A1A4CE /* libInAppPurchase.a */; };
 		09591EDC159E24C4003000D5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09591EDB159E24C4003000D5 /* AudioToolbox.framework */; };
 		09591EDE159E24CF003000D5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09591EDD159E24CF003000D5 /* SystemConfiguration.framework */; };
-		0971F62715A4B1D8004933DD /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0971F62615A4B1D8004933DD /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		098CEB56158720A10047294E /* NSDate+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 098CEB55158720A10047294E /* NSDate+Formatter.m */; };
 		0991FA48158934880075A50F /* SettingsRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 0991FA47158934880075A50F /* SettingsRepository.m */; };
 		0991FA4C1589437F0075A50F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0991FA4B1589437F0075A50F /* MainViewController.m */; };
@@ -35,6 +34,14 @@
 		099FB28A15879C04009D4A05 /* e-mail.template in Resources */ = {isa = PBXBuildFile; fileRef = 099FB28915879C03009D4A05 /* e-mail.template */; };
 		099FB28D1587A09C009D4A05 /* TextComposer.m in Sources */ = {isa = PBXBuildFile; fileRef = 099FB28C1587A09C009D4A05 /* TextComposer.m */; };
 		09A18EA3159CF8B900EFE5AF /* CustomCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A18EA2159CF8B900EFE5AF /* CustomCityViewController.m */; };
+		09B4D74F16AAA6D8005B9E06 /* AbstractActionSheetPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B4D74616AAA6D8005B9E06 /* AbstractActionSheetPicker.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		09B4D75016AAA6D8005B9E06 /* ActionSheetDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B4D74816AAA6D8005B9E06 /* ActionSheetDatePicker.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		09B4D75116AAA6D8005B9E06 /* ActionSheetDistancePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B4D74A16AAA6D8005B9E06 /* ActionSheetDistancePicker.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		09B4D75216AAA6D8005B9E06 /* ActionSheetStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B4D74C16AAA6D8005B9E06 /* ActionSheetStringPicker.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		09B4D75316AAA6D8005B9E06 /* DistancePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B4D74E16AAA6D8005B9E06 /* DistancePickerView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		09B4D75816AAA6FA005B9E06 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B4D75716AAA6FA005B9E06 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		09B4D75C16AAA70E005B9E06 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B4D75B16AAA70E005B9E06 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		09B4D76016AAA723005B9E06 /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B4D75F16AAA723005B9E06 /* UICKeyChainStore.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		09BEADEB158618D900144302 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BEADEA158618D900144302 /* UIKit.framework */; };
 		09BEADED158618D900144302 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BEADEC158618D900144302 /* Foundation.framework */; };
 		09BEADEF158618D900144302 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BEADEE158618D900144302 /* CoreGraphics.framework */; };
@@ -53,15 +60,8 @@
 		09BEAE4115864E9600144302 /* scanner.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BEAE3F15864E9600144302 /* scanner.png */; };
 		09BEAE4215864E9600144302 /* scanner@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BEAE4015864E9600144302 /* scanner@2x.png */; };
 		09BEAE46158656DF00144302 /* Passport.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BEAE45158656DF00144302 /* Passport.m */; };
-		09BEAE87158676F600144302 /* AbstractActionSheetPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BEAE63158676F600144302 /* AbstractActionSheetPicker.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		09BEAE88158676F600144302 /* ActionSheetDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BEAE65158676F600144302 /* ActionSheetDatePicker.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		09BEAE89158676F600144302 /* ActionSheetDistancePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BEAE67158676F600144302 /* ActionSheetDistancePicker.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		09BEAE8A158676F600144302 /* ActionSheetStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BEAE69158676F600144302 /* ActionSheetStringPicker.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		09BEAE8B158676F600144302 /* DistancePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BEAE6B158676F600144302 /* DistancePickerView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		09BEAEA015868CBD00144302 /* PassportRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BEAE9F15868CBD00144302 /* PassportRepository.m */; };
-		09BEAEAC1586905F00144302 /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BEAEA71586905F00144302 /* UICKeyChainStore.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		09BEAEAE158690B300144302 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BEAEAD158690B300144302 /* Security.framework */; };
-		09D8C6A6159B8EB3004B8583 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D8C6A3159B8EB3004B8583 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		09D8C6AE159B96BC004B8583 /* StatesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D8C6AC159B96BC004B8583 /* StatesViewController.m */; };
 		09D8C6B1159B9842004B8583 /* states.json in Resources */ = {isa = PBXBuildFile; fileRef = 09D8C6B0159B9842004B8583 /* states.json */; };
 		09D8C6B3159B984C004B8583 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 09D8C6B2159B984C004B8583 /* cities.json */; };
@@ -90,13 +90,6 @@
 			remoteGlobalIDString = 093E1BF615A5EE7F00D5538A;
 			remoteInfo = InAppPurchase;
 		};
-		09BEAE97158676F600144302 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 09BEAE6F158676F600144302 /* ActionSheetPicker.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
-			remoteInfo = ActionSheetPicker;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -122,8 +115,6 @@
 		0948FB7816A8671100A1A4CE /* InAppPurchase.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = InAppPurchase.xcodeproj; path = Vendor/InAppPurchase/InAppPurchase.xcodeproj; sourceTree = "<group>"; };
 		09591EDB159E24C4003000D5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		09591EDD159E24CF003000D5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		0971F62515A4B1D8004933DD /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		0971F62615A4B1D8004933DD /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		098CEB54158720A10047294E /* NSDate+Formatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Formatter.h"; sourceTree = "<group>"; };
 		098CEB55158720A10047294E /* NSDate+Formatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Formatter.m"; sourceTree = "<group>"; };
 		0991FA46158934880075A50F /* SettingsRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsRepository.h; sourceTree = "<group>"; };
@@ -149,6 +140,23 @@
 		099FB28C1587A09C009D4A05 /* TextComposer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextComposer.m; sourceTree = "<group>"; };
 		09A18EA1159CF8B900EFE5AF /* CustomCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCityViewController.h; sourceTree = "<group>"; };
 		09A18EA2159CF8B900EFE5AF /* CustomCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCityViewController.m; sourceTree = "<group>"; };
+		09B4D74516AAA6D8005B9E06 /* AbstractActionSheetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AbstractActionSheetPicker.h; path = Vendor/ActionSheetPicker/Pickers/AbstractActionSheetPicker.h; sourceTree = "<group>"; };
+		09B4D74616AAA6D8005B9E06 /* AbstractActionSheetPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AbstractActionSheetPicker.m; path = Vendor/ActionSheetPicker/Pickers/AbstractActionSheetPicker.m; sourceTree = "<group>"; };
+		09B4D74716AAA6D8005B9E06 /* ActionSheetDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionSheetDatePicker.h; path = Vendor/ActionSheetPicker/Pickers/ActionSheetDatePicker.h; sourceTree = "<group>"; };
+		09B4D74816AAA6D8005B9E06 /* ActionSheetDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActionSheetDatePicker.m; path = Vendor/ActionSheetPicker/Pickers/ActionSheetDatePicker.m; sourceTree = "<group>"; };
+		09B4D74916AAA6D8005B9E06 /* ActionSheetDistancePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionSheetDistancePicker.h; path = Vendor/ActionSheetPicker/Pickers/ActionSheetDistancePicker.h; sourceTree = "<group>"; };
+		09B4D74A16AAA6D8005B9E06 /* ActionSheetDistancePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActionSheetDistancePicker.m; path = Vendor/ActionSheetPicker/Pickers/ActionSheetDistancePicker.m; sourceTree = "<group>"; };
+		09B4D74B16AAA6D8005B9E06 /* ActionSheetStringPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionSheetStringPicker.h; path = Vendor/ActionSheetPicker/Pickers/ActionSheetStringPicker.h; sourceTree = "<group>"; };
+		09B4D74C16AAA6D8005B9E06 /* ActionSheetStringPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActionSheetStringPicker.m; path = Vendor/ActionSheetPicker/Pickers/ActionSheetStringPicker.m; sourceTree = "<group>"; };
+		09B4D74D16AAA6D8005B9E06 /* DistancePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DistancePickerView.h; path = Vendor/ActionSheetPicker/Pickers/DistancePickerView.h; sourceTree = "<group>"; };
+		09B4D74E16AAA6D8005B9E06 /* DistancePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DistancePickerView.m; path = Vendor/ActionSheetPicker/Pickers/DistancePickerView.m; sourceTree = "<group>"; };
+		09B4D75416AAA6E2005B9E06 /* ActionSheetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionSheetPicker.h; path = Vendor/ActionSheetPicker/ActionSheetPicker.h; sourceTree = "<group>"; };
+		09B4D75616AAA6FA005B9E06 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = Vendor/JSONKit/JSONKit.h; sourceTree = "<group>"; };
+		09B4D75716AAA6FA005B9E06 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = Vendor/JSONKit/JSONKit.m; sourceTree = "<group>"; };
+		09B4D75A16AAA70E005B9E06 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Vendor/Reachability/Reachability.h; sourceTree = "<group>"; };
+		09B4D75B16AAA70E005B9E06 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Vendor/Reachability/Reachability.m; sourceTree = "<group>"; };
+		09B4D75E16AAA723005B9E06 /* UICKeyChainStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UICKeyChainStore.h; path = Vendor/UICKeyChainStore/UICKeyChainStore.h; sourceTree = "<group>"; };
+		09B4D75F16AAA723005B9E06 /* UICKeyChainStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UICKeyChainStore.m; path = Vendor/UICKeyChainStore/UICKeyChainStore.m; sourceTree = "<group>"; };
 		09BEADE6158618D900144302 /* passport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = passport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09BEADEA158618D900144302 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		09BEADEC158618D900144302 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -178,49 +186,10 @@
 		09BEAE44158656DF00144302 /* Passport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Passport.h; sourceTree = "<group>"; };
 		09BEAE45158656DF00144302 /* Passport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Passport.m; sourceTree = "<group>"; };
 		09BEAE471586575A00144302 /* Gender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gender.h; sourceTree = "<group>"; };
-		09BEAE5D158676F600144302 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		09BEAE5E158676F600144302 /* ActionSheetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetPicker.h; sourceTree = "<group>"; };
-		09BEAE5F158676F600144302 /* AUTHORS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AUTHORS; sourceTree = "<group>"; };
-		09BEAE60158676F600144302 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		09BEAE62158676F600144302 /* AbstractActionSheetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractActionSheetPicker.h; sourceTree = "<group>"; };
-		09BEAE63158676F600144302 /* AbstractActionSheetPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractActionSheetPicker.m; sourceTree = "<group>"; };
-		09BEAE64158676F600144302 /* ActionSheetDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetDatePicker.h; sourceTree = "<group>"; };
-		09BEAE65158676F600144302 /* ActionSheetDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetDatePicker.m; sourceTree = "<group>"; };
-		09BEAE66158676F600144302 /* ActionSheetDistancePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetDistancePicker.h; sourceTree = "<group>"; };
-		09BEAE67158676F600144302 /* ActionSheetDistancePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetDistancePicker.m; sourceTree = "<group>"; };
-		09BEAE68158676F600144302 /* ActionSheetStringPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetStringPicker.h; sourceTree = "<group>"; };
-		09BEAE69158676F600144302 /* ActionSheetStringPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetStringPicker.m; sourceTree = "<group>"; };
-		09BEAE6A158676F600144302 /* DistancePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistancePickerView.h; sourceTree = "<group>"; };
-		09BEAE6B158676F600144302 /* DistancePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistancePickerView.m; sourceTree = "<group>"; };
-		09BEAE6C158676F600144302 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		09BEAE6E158676F600144302 /* ActionSheetPicker-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ActionSheetPicker-Info.plist"; sourceTree = "<group>"; };
-		09BEAE6F158676F600144302 /* ActionSheetPicker.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = ActionSheetPicker.xcodeproj; sourceTree = "<group>"; };
-		09BEAE72158676F600144302 /* ActionSheetPicker_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetPicker_Prefix.pch; sourceTree = "<group>"; };
-		09BEAE73158676F600144302 /* ActionSheetPickerViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "ActionSheetPickerViewController-iPad.xib"; sourceTree = "<group>"; };
-		09BEAE74158676F600144302 /* ActionSheetPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActionSheetPickerViewController.xib; sourceTree = "<group>"; };
-		09BEAE76158676F600144302 /* ActionSheetPickerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetPickerAppDelegate.h; sourceTree = "<group>"; };
-		09BEAE77158676F600144302 /* ActionSheetPickerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetPickerAppDelegate.m; sourceTree = "<group>"; };
-		09BEAE78158676F600144302 /* ActionSheetPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetPickerViewController.h; sourceTree = "<group>"; };
-		09BEAE79158676F600144302 /* ActionSheetPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetPickerViewController.m; sourceTree = "<group>"; };
-		09BEAE7A158676F600144302 /* NSDate+TCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TCUtils.h"; sourceTree = "<group>"; };
-		09BEAE7B158676F600144302 /* NSDate+TCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TCUtils.m"; sourceTree = "<group>"; };
-		09BEAE7D158676F600144302 /* MainWindow-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MainWindow-iPad.xib"; sourceTree = "<group>"; };
-		09BEAE7E158676F600144302 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		09BEAE7F158676F600144302 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		09BEAE9E15868CBD00144302 /* PassportRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassportRepository.h; sourceTree = "<group>"; };
 		09BEAE9F15868CBD00144302 /* PassportRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassportRepository.m; sourceTree = "<group>"; };
-		09BEAEA21586905F00144302 /* .gitattributes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
-		09BEAEA31586905F00144302 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		09BEAEA41586905F00144302 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		09BEAEA51586905F00144302 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		09BEAEA61586905F00144302 /* UICKeyChainStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICKeyChainStore.h; sourceTree = "<group>"; };
-		09BEAEA71586905F00144302 /* UICKeyChainStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICKeyChainStore.m; sourceTree = "<group>"; };
 		09BEAEAD158690B300144302 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		09BEAEAF1586915E00144302 /* Passport.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Passport.entitlements; sourceTree = "<group>"; };
-		09D8C6A1159B8EB3004B8583 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
-		09D8C6A2159B8EB3004B8583 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		09D8C6A3159B8EB3004B8583 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
-		09D8C6A4159B8EB3004B8583 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		09D8C6AB159B96BC004B8583 /* StatesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatesViewController.h; sourceTree = "<group>"; };
 		09D8C6AC159B96BC004B8583 /* StatesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatesViewController.m; sourceTree = "<group>"; };
 		09D8C6B0159B9842004B8583 /* states.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = states.json; sourceTree = "<group>"; };
@@ -288,15 +257,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0971F62415A4B1D8004933DD /* Reachability */ = {
-			isa = PBXGroup;
-			children = (
-				0971F62515A4B1D8004933DD /* Reachability.h */,
-				0971F62615A4B1D8004933DD /* Reachability.m */,
-			);
-			path = Reachability;
-			sourceTree = "<group>";
-		};
 		0991FA49158943570075A50F /* General */ = {
 			isa = PBXGroup;
 			children = (
@@ -314,6 +274,51 @@
 				09966C0015A0F2CD00C5C7E0 /* ProductIdentifiers.h */,
 			);
 			name = InAppPurchase;
+			sourceTree = "<group>";
+		};
+		09B4D74416AAA6CA005B9E06 /* ActionSheetPicker */ = {
+			isa = PBXGroup;
+			children = (
+				09B4D75416AAA6E2005B9E06 /* ActionSheetPicker.h */,
+				09B4D74516AAA6D8005B9E06 /* AbstractActionSheetPicker.h */,
+				09B4D74616AAA6D8005B9E06 /* AbstractActionSheetPicker.m */,
+				09B4D74716AAA6D8005B9E06 /* ActionSheetDatePicker.h */,
+				09B4D74816AAA6D8005B9E06 /* ActionSheetDatePicker.m */,
+				09B4D74916AAA6D8005B9E06 /* ActionSheetDistancePicker.h */,
+				09B4D74A16AAA6D8005B9E06 /* ActionSheetDistancePicker.m */,
+				09B4D74B16AAA6D8005B9E06 /* ActionSheetStringPicker.h */,
+				09B4D74C16AAA6D8005B9E06 /* ActionSheetStringPicker.m */,
+				09B4D74D16AAA6D8005B9E06 /* DistancePickerView.h */,
+				09B4D74E16AAA6D8005B9E06 /* DistancePickerView.m */,
+			);
+			name = ActionSheetPicker;
+			sourceTree = "<group>";
+		};
+		09B4D75516AAA6EE005B9E06 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				09B4D75616AAA6FA005B9E06 /* JSONKit.h */,
+				09B4D75716AAA6FA005B9E06 /* JSONKit.m */,
+			);
+			name = JSONKit;
+			sourceTree = "<group>";
+		};
+		09B4D75916AAA702005B9E06 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				09B4D75A16AAA70E005B9E06 /* Reachability.h */,
+				09B4D75B16AAA70E005B9E06 /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		09B4D75D16AAA716005B9E06 /* UICKeyChainStore */ = {
+			isa = PBXGroup;
+			children = (
+				09B4D75E16AAA723005B9E06 /* UICKeyChainStore.h */,
+				09B4D75F16AAA723005B9E06 /* UICKeyChainStore.m */,
+			);
+			name = UICKeyChainStore;
 			sourceTree = "<group>";
 		};
 		09BEADDB158618D900144302 = {
@@ -340,12 +345,12 @@
 			isa = PBXGroup;
 			children = (
 				0948FB7816A8671100A1A4CE /* InAppPurchase.xcodeproj */,
+				09B4D75D16AAA716005B9E06 /* UICKeyChainStore */,
+				09B4D75916AAA702005B9E06 /* Reachability */,
+				09B4D75516AAA6EE005B9E06 /* JSONKit */,
+				09B4D74416AAA6CA005B9E06 /* ActionSheetPicker */,
 				0948FB6A16A85FF200A1A4CE /* GoogleAdMobAdsSDK */,
 				0948FB6616A85DAA00A1A4CE /* Flurry */,
-				09D8C6A0159B8EB3004B8583 /* JSONKit */,
-				09BEAEA11586905F00144302 /* UICKeyChainStore */,
-				09BEAE5C158676F600144302 /* ActionSheetPicker */,
-				0971F62415A4B1D8004933DD /* Reachability */,
 				0948FB7616A8618200A1A4CE /* AdSupport.framework */,
 				09966BF415A08F4700C5C7E0 /* StoreKit.framework */,
 				09591EDD159E24CF003000D5 /* SystemConfiguration.framework */,
@@ -484,82 +489,6 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
-		09BEAE5C158676F600144302 /* ActionSheetPicker */ = {
-			isa = PBXGroup;
-			children = (
-				09BEAE5D158676F600144302 /* .gitignore */,
-				09BEAE5E158676F600144302 /* ActionSheetPicker.h */,
-				09BEAE5F158676F600144302 /* AUTHORS */,
-				09BEAE60158676F600144302 /* LICENSE */,
-				09BEAE61158676F600144302 /* Pickers */,
-				09BEAE6C158676F600144302 /* README.md */,
-				09BEAE6D158676F600144302 /* Sample */,
-			);
-			path = ActionSheetPicker;
-			sourceTree = "<group>";
-		};
-		09BEAE61158676F600144302 /* Pickers */ = {
-			isa = PBXGroup;
-			children = (
-				09BEAE62158676F600144302 /* AbstractActionSheetPicker.h */,
-				09BEAE63158676F600144302 /* AbstractActionSheetPicker.m */,
-				09BEAE64158676F600144302 /* ActionSheetDatePicker.h */,
-				09BEAE65158676F600144302 /* ActionSheetDatePicker.m */,
-				09BEAE66158676F600144302 /* ActionSheetDistancePicker.h */,
-				09BEAE67158676F600144302 /* ActionSheetDistancePicker.m */,
-				09BEAE68158676F600144302 /* ActionSheetStringPicker.h */,
-				09BEAE69158676F600144302 /* ActionSheetStringPicker.m */,
-				09BEAE6A158676F600144302 /* DistancePickerView.h */,
-				09BEAE6B158676F600144302 /* DistancePickerView.m */,
-			);
-			path = Pickers;
-			sourceTree = "<group>";
-		};
-		09BEAE6D158676F600144302 /* Sample */ = {
-			isa = PBXGroup;
-			children = (
-				09BEAE6E158676F600144302 /* ActionSheetPicker-Info.plist */,
-				09BEAE6F158676F600144302 /* ActionSheetPicker.xcodeproj */,
-				09BEAE72158676F600144302 /* ActionSheetPicker_Prefix.pch */,
-				09BEAE73158676F600144302 /* ActionSheetPickerViewController-iPad.xib */,
-				09BEAE74158676F600144302 /* ActionSheetPickerViewController.xib */,
-				09BEAE75158676F600144302 /* Classes */,
-				09BEAE7C158676F600144302 /* iPad */,
-				09BEAE7E158676F600144302 /* main.m */,
-				09BEAE7F158676F600144302 /* MainWindow.xib */,
-			);
-			path = Sample;
-			sourceTree = "<group>";
-		};
-		09BEAE70158676F600144302 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				09BEAE98158676F600144302 /* ActionSheetPicker.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		09BEAE75158676F600144302 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				09BEAE76158676F600144302 /* ActionSheetPickerAppDelegate.h */,
-				09BEAE77158676F600144302 /* ActionSheetPickerAppDelegate.m */,
-				09BEAE78158676F600144302 /* ActionSheetPickerViewController.h */,
-				09BEAE79158676F600144302 /* ActionSheetPickerViewController.m */,
-				09BEAE7A158676F600144302 /* NSDate+TCUtils.h */,
-				09BEAE7B158676F600144302 /* NSDate+TCUtils.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		09BEAE7C158676F600144302 /* iPad */ = {
-			isa = PBXGroup;
-			children = (
-				09BEAE7D158676F600144302 /* MainWindow-iPad.xib */,
-			);
-			path = iPad;
-			sourceTree = "<group>";
-		};
 		09BEAE9C15868C7E00144302 /* DataAccess */ = {
 			isa = PBXGroup;
 			children = (
@@ -578,30 +507,6 @@
 				0991FA47158934880075A50F /* SettingsRepository.m */,
 			);
 			name = Repositories;
-			sourceTree = "<group>";
-		};
-		09BEAEA11586905F00144302 /* UICKeyChainStore */ = {
-			isa = PBXGroup;
-			children = (
-				09BEAEA21586905F00144302 /* .gitattributes */,
-				09BEAEA31586905F00144302 /* .gitignore */,
-				09BEAEA41586905F00144302 /* LICENSE */,
-				09BEAEA51586905F00144302 /* README.md */,
-				09BEAEA61586905F00144302 /* UICKeyChainStore.h */,
-				09BEAEA71586905F00144302 /* UICKeyChainStore.m */,
-			);
-			path = UICKeyChainStore;
-			sourceTree = "<group>";
-		};
-		09D8C6A0159B8EB3004B8583 /* JSONKit */ = {
-			isa = PBXGroup;
-			children = (
-				09D8C6A1159B8EB3004B8583 /* CHANGELOG.md */,
-				09D8C6A2159B8EB3004B8583 /* JSONKit.h */,
-				09D8C6A3159B8EB3004B8583 /* JSONKit.m */,
-				09D8C6A4159B8EB3004B8583 /* README.md */,
-			);
-			path = JSONKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -646,10 +551,6 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 09BEAE70158676F600144302 /* Products */;
-					ProjectRef = 09BEAE6F158676F600144302 /* ActionSheetPicker.xcodeproj */;
-				},
-				{
 					ProductGroup = 0948FB7916A8671100A1A4CE /* Products */;
 					ProjectRef = 0948FB7816A8671100A1A4CE /* InAppPurchase.xcodeproj */;
 				},
@@ -674,13 +575,6 @@
 			fileType = wrapper.cfbundle;
 			path = InAppPurchase.bundle;
 			remoteRef = 0948FB8316A8671100A1A4CE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		09BEAE98158676F600144302 /* ActionSheetPicker.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = ActionSheetPicker.app;
-			remoteRef = 09BEAE97158676F600144302 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -727,13 +621,7 @@
 				09BEAE2315861E9C00144302 /* LoginViewController.m in Sources */,
 				09BEAE2A15861F4600144302 /* PasswordViewController.m in Sources */,
 				09BEAE46158656DF00144302 /* Passport.m in Sources */,
-				09BEAE87158676F600144302 /* AbstractActionSheetPicker.m in Sources */,
-				09BEAE88158676F600144302 /* ActionSheetDatePicker.m in Sources */,
-				09BEAE89158676F600144302 /* ActionSheetDistancePicker.m in Sources */,
-				09BEAE8A158676F600144302 /* ActionSheetStringPicker.m in Sources */,
-				09BEAE8B158676F600144302 /* DistancePickerView.m in Sources */,
 				09BEAEA015868CBD00144302 /* PassportRepository.m in Sources */,
-				09BEAEAC1586905F00144302 /* UICKeyChainStore.m in Sources */,
 				098CEB56158720A10047294E /* NSDate+Formatter.m in Sources */,
 				099FB28D1587A09C009D4A05 /* TextComposer.m in Sources */,
 				0927E2C01587B0BE00B3EA3B /* GenderFormatter.m in Sources */,
@@ -741,12 +629,18 @@
 				0991FA4C1589437F0075A50F /* MainViewController.m in Sources */,
 				0993A426158C7059009DB6E7 /* NSString+Hash.m in Sources */,
 				0993A42D158C854C009DB6E7 /* UIButton+Gradient.m in Sources */,
-				09D8C6A6159B8EB3004B8583 /* JSONKit.m in Sources */,
 				09D8C6AE159B96BC004B8583 /* StatesViewController.m in Sources */,
 				09D8C6B6159BB4C8004B8583 /* CitiesViewController.m in Sources */,
 				09A18EA3159CF8B900EFE5AF /* CustomCityViewController.m in Sources */,
 				09966BFF15A0F02600C5C7E0 /* DisableAdProductActivator.m in Sources */,
-				0971F62715A4B1D8004933DD /* Reachability.m in Sources */,
+				09B4D74F16AAA6D8005B9E06 /* AbstractActionSheetPicker.m in Sources */,
+				09B4D75016AAA6D8005B9E06 /* ActionSheetDatePicker.m in Sources */,
+				09B4D75116AAA6D8005B9E06 /* ActionSheetDistancePicker.m in Sources */,
+				09B4D75216AAA6D8005B9E06 /* ActionSheetStringPicker.m in Sources */,
+				09B4D75316AAA6D8005B9E06 /* DistancePickerView.m in Sources */,
+				09B4D75816AAA6FA005B9E06 /* JSONKit.m in Sources */,
+				09B4D75C16AAA70E005B9E06 /* Reachability.m in Sources */,
+				09B4D76016AAA723005B9E06 /* UICKeyChainStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
