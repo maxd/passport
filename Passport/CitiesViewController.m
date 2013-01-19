@@ -76,6 +76,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSDictionary *stateObj = [self.filteredCities objectAtIndex:(NSUInteger) indexPath.row];
 
+    [ctlSearchBar setShowsCancelButton:NO animated:YES];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+
     if ([stateObj objectForKey:@"id"]) {
         [self.delegate didSelectCity:[stateObj objectForKey:TITLE_FIELD]];
 
@@ -97,6 +100,18 @@
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
     [self.view endEditing:YES];
+}
+
+- (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar {
+    [ctlSearchBar setShowsCancelButton:YES animated:YES];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    return YES;
+}
+
+- (BOOL)searchBarShouldEndEditing:(UISearchBar *)searchBar {
+    [ctlSearchBar setShowsCancelButton:NO animated:YES];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    return YES;
 }
 
 #pragma mark Perform Segue

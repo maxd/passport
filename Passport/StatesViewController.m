@@ -62,6 +62,9 @@
 
     [self.delegate didSelectState:[stateObj objectForKey:TITLE_FIELD]];
 
+    [ctlSearchBar setShowsCancelButton:NO animated:YES];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+
     [self.navigationController popViewControllerAnimated:YES];
 }
 
@@ -77,6 +80,18 @@
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
     [self.view endEditing:YES];
+}
+
+- (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar {
+    [ctlSearchBar setShowsCancelButton:YES animated:YES];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    return YES;
+}
+
+- (BOOL)searchBarShouldEndEditing:(UISearchBar *)searchBar {
+    [ctlSearchBar setShowsCancelButton:NO animated:YES];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    return YES;
 }
 
 @end

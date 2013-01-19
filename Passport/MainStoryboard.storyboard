@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
     <dependencies>
-        <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
@@ -379,7 +378,7 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" showsCancelButton="YES" id="Lg2-yj-XwB">
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="Lg2-yj-XwB">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
@@ -512,7 +511,7 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" showsCancelButton="YES" id="d7b-Mf-6wc">
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="d7b-Mf-6wc">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
@@ -942,6 +941,81 @@
         <image name="scanner.png" width="24" height="24"/>
         <image name="settings.png" width="24" height="24"/>
     </resources>
+    <classes>
+        <class className="CitiesViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CitiesViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="ctlSearchBar" candidateClass="UISearchBar"/>
+                <relationship kind="outlet" name="lblEmptyTable" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="CustomCityViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomCityViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="confirmButtonHandler:"/>
+                <relationship kind="outlet" name="btConfirm" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="txtCustomCity" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="LoginViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="login:"/>
+                <relationship kind="outlet" name="btLogin" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="txtPassword" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="MainViewController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainViewController.h"/>
+        </class>
+        <class className="PassportViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PassportViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="txtBirthDay" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="txtCity" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="txtDateOfReceipt" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="txtFirstName" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="txtGender" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="txtLastName" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="txtMiddleName" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="txtPassportNumber" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="txtPassportSeries" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="txtPlaceOfReceipt" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="txtState" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="txtSubdivisionCode" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="PasswordViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PasswordViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="confirmPassword:"/>
+                <relationship kind="outlet" name="btConfirmPassword" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="txtConfirmPassword" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="txtPassword" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="ScansViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ScansViewController.h"/>
+        </class>
+        <class className="SettingsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="changePassword:"/>
+                <relationship kind="outlet" name="btChangePassword" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btDisableAd" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btRestorePurchases" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="txtConfirmPassword" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="txtPassword" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="StatesViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/StatesViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="ctlSearchBar" candidateClass="UISearchBar"/>
+                <relationship kind="outlet" name="lblEmptyTable" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
