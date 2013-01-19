@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0927E2BD1587AB3300B3EA3B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0927E2BC1587AB3300B3EA3B /* MessageUI.framework */; };
 		0927E2C01587B0BE00B3EA3B /* GenderFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0927E2BF1587B0BE00B3EA3B /* GenderFormatter.m */; };
+		0929774316AAEA0900C80207 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0929774216AAEA0900C80207 /* Default-568h@2x.png */; };
 		093E9B25158E02BA00ED054B /* passport-57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 093E9B24158E02BA00ED054B /* passport-57x57.png */; };
 		093E9B27158E02BE00ED054B /* passport-114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 093E9B26158E02BE00ED054B /* passport-114x114.png */; };
 		0944213F158CF72000FFDA71 /* print.template in Resources */ = {isa = PBXBuildFile; fileRef = 0944213E158CF72000FFDA71 /* print.template */; };
@@ -104,6 +105,7 @@
 		0927E2BC1587AB3300B3EA3B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		0927E2BE1587B0BE00B3EA3B /* GenderFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenderFormatter.h; sourceTree = "<group>"; };
 		0927E2BF1587B0BE00B3EA3B /* GenderFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenderFormatter.m; sourceTree = "<group>"; };
+		0929774216AAEA0900C80207 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		093E9B24158E02BA00ED054B /* passport-57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "passport-57x57.png"; sourceTree = "<group>"; };
 		093E9B26158E02BE00ED054B /* passport-114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "passport-114x114.png"; sourceTree = "<group>"; };
 		0944213E158CF72000FFDA71 /* print.template */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; path = print.template; sourceTree = "<group>"; };
@@ -335,6 +337,7 @@
 				9BEAEAF1586915E00144303 /* README */,
 				093E9B24158E02BA00ED054B /* passport-57x57.png */,
 				093E9B26158E02BE00ED054B /* passport-114x114.png */,
+				0929774216AAEA0900C80207 /* Default-568h@2x.png */,
 				09BEADF0158618D900144302 /* Passport */,
 				09BEADE9158618D900144302 /* Frameworks */,
 				09BEADE7158618D900144302 /* Products */,
@@ -613,6 +616,7 @@
 				09966BEE15A088D100C5C7E0 /* button_gray@2.png in Resources */,
 				09966BEF15A088D100C5C7E0 /* button_gray.png in Resources */,
 				09C6BC8716AABD7B00431975 /* InAppPurchase.bundle in Resources */,
+				0929774316AAEA0900C80207 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
