@@ -70,12 +70,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		093729FC16AAB98C0096E240 /* PBXContainerItemProxy */ = {
+		09213EB416AAE0C200EFBF76 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0948FB7816A8671100A1A4CE /* InAppPurchase.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 093E1C2A15A6086700D5538A;
-			remoteInfo = Framework;
+			remoteGlobalIDString = 093E1BF615A5EE7F00D5538A;
+			remoteInfo = InAppPurchase;
+		};
+		09213EB616AAE1AF00EFBF76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0948FB7816A8671100A1A4CE /* InAppPurchase.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 093E1CDA15A62E0200D5538A;
+			remoteInfo = InAppPurchaseResources;
 		};
 		0948FB8116A8671100A1A4CE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -524,7 +531,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				093729FD16AAB98C0096E240 /* PBXTargetDependency */,
+				09213EB716AAE1AF00EFBF76 /* PBXTargetDependency */,
+				09213EB516AAE0C200EFBF76 /* PBXTargetDependency */,
 			);
 			name = Passport;
 			productName = Passport;
@@ -649,10 +657,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		093729FD16AAB98C0096E240 /* PBXTargetDependency */ = {
+		09213EB516AAE0C200EFBF76 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Framework;
-			targetProxy = 093729FC16AAB98C0096E240 /* PBXContainerItemProxy */;
+			name = InAppPurchase;
+			targetProxy = 09213EB416AAE0C200EFBF76 /* PBXContainerItemProxy */;
+		};
+		09213EB716AAE1AF00EFBF76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = InAppPurchaseResources;
+			targetProxy = 09213EB616AAE1AF00EFBF76 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
