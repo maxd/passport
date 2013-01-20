@@ -59,7 +59,8 @@
     btRestorePurchases.hidden = isAdDisabled;
 
     if (!isAdDisabled) {
-        inAppPurchaseManager = [InAppPurchaseManager new];
+        AlertViewAlertHandler *alertHandler = [AlertViewAlertHandler new];
+        inAppPurchaseManager = [[InAppPurchaseManager alloc] initWithAlertHandler:alertHandler];
         [inAppPurchaseManager addProductActivator:[DisableAdProductActivator new]];
         [inAppPurchaseManager updateProducts];
     }
