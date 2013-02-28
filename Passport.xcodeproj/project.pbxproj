@@ -26,9 +26,9 @@
 		0993A429158C82DA009DB6E7 /* button_green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0993A427158C82DA009DB6E7 /* button_green@2x.png */; };
 		0993A42A158C82DA009DB6E7 /* button_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 0993A428158C82DA009DB6E7 /* button_green.png */; };
 		0993A42D158C854C009DB6E7 /* UIButton+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0993A42C158C854C009DB6E7 /* UIButton+Gradient.m */; };
-		09966BEA15A0882C00C5C7E0 /* button_red@2.png in Resources */ = {isa = PBXBuildFile; fileRef = 09966BE815A0882C00C5C7E0 /* button_red@2.png */; };
+		09966BEA15A0882C00C5C7E0 /* button_red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09966BE815A0882C00C5C7E0 /* button_red@2x.png */; };
 		09966BEB15A0882C00C5C7E0 /* button_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 09966BE915A0882C00C5C7E0 /* button_red.png */; };
-		09966BEE15A088D100C5C7E0 /* button_gray@2.png in Resources */ = {isa = PBXBuildFile; fileRef = 09966BEC15A088D100C5C7E0 /* button_gray@2.png */; };
+		09966BEE15A088D100C5C7E0 /* button_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09966BEC15A088D100C5C7E0 /* button_gray@2x.png */; };
 		09966BEF15A088D100C5C7E0 /* button_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 09966BED15A088D100C5C7E0 /* button_gray.png */; };
 		09966BF515A08F4700C5C7E0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09966BF415A08F4700C5C7E0 /* StoreKit.framework */; };
 		09966BFF15A0F02600C5C7E0 /* DisableAdProductActivator.m in Sources */ = {isa = PBXBuildFile; fileRef = 09966BFE15A0F02600C5C7E0 /* DisableAdProductActivator.m */; };
@@ -137,9 +137,9 @@
 		0993A428158C82DA009DB6E7 /* button_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_green.png; sourceTree = "<group>"; };
 		0993A42B158C854C009DB6E7 /* UIButton+Gradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Gradient.h"; sourceTree = "<group>"; };
 		0993A42C158C854C009DB6E7 /* UIButton+Gradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Gradient.m"; sourceTree = "<group>"; };
-		09966BE815A0882C00C5C7E0 /* button_red@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_red@2.png"; sourceTree = "<group>"; };
+		09966BE815A0882C00C5C7E0 /* button_red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_red@2x.png"; sourceTree = "<group>"; };
 		09966BE915A0882C00C5C7E0 /* button_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_red.png; sourceTree = "<group>"; };
-		09966BEC15A088D100C5C7E0 /* button_gray@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_gray@2.png"; sourceTree = "<group>"; };
+		09966BEC15A088D100C5C7E0 /* button_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_gray@2x.png"; sourceTree = "<group>"; };
 		09966BED15A088D100C5C7E0 /* button_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_gray.png; sourceTree = "<group>"; };
 		09966BF415A08F4700C5C7E0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		09966BFD15A0F02600C5C7E0 /* DisableAdProductActivator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisableAdProductActivator.h; sourceTree = "<group>"; };
@@ -413,9 +413,9 @@
 				09D8C6B2159B984C004B8583 /* cities.json */,
 				0993A427158C82DA009DB6E7 /* button_green@2x.png */,
 				0993A428158C82DA009DB6E7 /* button_green.png */,
-				09966BE815A0882C00C5C7E0 /* button_red@2.png */,
+				09966BE815A0882C00C5C7E0 /* button_red@2x.png */,
 				09966BE915A0882C00C5C7E0 /* button_red.png */,
-				09966BEC15A088D100C5C7E0 /* button_gray@2.png */,
+				09966BEC15A088D100C5C7E0 /* button_gray@2x.png */,
 				09966BED15A088D100C5C7E0 /* button_gray.png */,
 				09BEAE3715864DAD00144302 /* passport.png */,
 				09BEAE3815864DAD00144302 /* passport@2x.png */,
@@ -611,9 +611,9 @@
 				093E9B27158E02BE00ED054B /* passport-114x114.png in Resources */,
 				09D8C6B1159B9842004B8583 /* states.json in Resources */,
 				09D8C6B3159B984C004B8583 /* cities.json in Resources */,
-				09966BEA15A0882C00C5C7E0 /* button_red@2.png in Resources */,
+				09966BEA15A0882C00C5C7E0 /* button_red@2x.png in Resources */,
 				09966BEB15A0882C00C5C7E0 /* button_red.png in Resources */,
-				09966BEE15A088D100C5C7E0 /* button_gray@2.png in Resources */,
+				09966BEE15A088D100C5C7E0 /* button_gray@2x.png in Resources */,
 				09966BEF15A088D100C5C7E0 /* button_gray.png in Resources */,
 				09C6BC8716AABD7B00431975 /* InAppPurchase.bundle in Resources */,
 				0929774316AAEA0900C80207 /* Default-568h@2x.png in Resources */,
